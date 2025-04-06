@@ -1,0 +1,18 @@
+\hypertarget{SystemController_8h_source}{}\doxysection{System\+Controller.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SYSTEM\_CONTROLLER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SYSTEM\_CONTROLLER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}SoilSensor.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}LightController.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}WaterPump.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }SystemController \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     SystemController(uint8\_t soilSensorAddress, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115::Mux}} soilSensorMux,}
+\DoxyCodeLine{11                      \textcolor{keywordtype}{int} lightControllerPin, time\_t lightOnTime, time\_t lightOffTime,}
+\DoxyCodeLine{12                      \textcolor{keywordtype}{int} waterPumpPin, \textcolor{keywordtype}{int} pumpIgnoreTime, \textcolor{keywordtype}{int} pumpDuration);}
+\DoxyCodeLine{13    }
+
+\end{DoxyCode}

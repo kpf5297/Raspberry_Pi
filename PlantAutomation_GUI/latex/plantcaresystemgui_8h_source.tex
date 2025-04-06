@@ -1,0 +1,68 @@
+\hypertarget{plantcaresystemgui_8h_source}{}\doxysection{plantcaresystemgui.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PLANTCARESYSTEMGUI\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PLANTCARESYSTEMGUI\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{ADS1115_8h}{ADS1115.h}}>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <LightController.h>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <Logging.h>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <SoilSensor.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <WaterPump.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <SystemController.h>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <gpiod.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }Ui \{ \textcolor{keyword}{class }\mbox{\hyperlink{classPlantCareSystemGUI}{PlantCareSystemGUI}}; \}}
+\DoxyCodeLine{18 QT\_END\_NAMESPACE}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classPlantCareSystemGUI}{PlantCareSystemGUI}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     Q\_OBJECT}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33     \mbox{\hyperlink{classPlantCareSystemGUI_a7376d87ab407f9d4e0f2a11046000600}{PlantCareSystemGUI}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{38     \mbox{\hyperlink{classPlantCareSystemGUI_aa924626461b2308b7fbbf9979cf86dfc}{\string~PlantCareSystemGUI}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} on\_mainView\_pushButton\_clicked();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} on\_manual\_pushButton\_clicked();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} on\_log\_pushButton\_clicked();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} on\_top\_light\_checkBox\_stateChanged(\textcolor{keywordtype}{int} arg1);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} on\_bottom\_light\_checkbox\_stateChanged(\textcolor{keywordtype}{int} arg1);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} on\_top\_pump\_checkBox\_stateChanged(\textcolor{keywordtype}{int} arg1);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} on\_bottom\_pump\_checkBox\_stateChanged(\textcolor{keywordtype}{int} arg1);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} on\_cal\_top\_button\_clicked();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} on\_cab\_bottom\_button\_clicked();}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} on\_top\_setpoint\_dial\_actionTriggered(\textcolor{keywordtype}{int} action);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{95     \textcolor{keywordtype}{void} on\_bott\_setpoint\_dial\_actionTriggered(\textcolor{keywordtype}{int} action);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} update\_gui\_values();}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{105     \textcolor{keywordtype}{void} update\_system\_inputs();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107 \textcolor{keyword}{private}:}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{112     Ui::PlantCareSystemGUI *ui;}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \};}
+\DoxyCodeLine{115 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PLANTCARESYSTEMGUI\_H}}
+
+\end{DoxyCode}

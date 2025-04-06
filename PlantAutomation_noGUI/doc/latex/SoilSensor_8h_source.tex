@@ -1,0 +1,41 @@
+\hypertarget{SoilSensor_8h_source}{}\doxysection{Soil\+Sensor.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SOILSENSOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SOILSENSOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ADS1115_8h}{ADS1115.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{classSoilSensor}{SoilSensor}} \{}
+\DoxyCodeLine{7 \textcolor{keyword}{public}:}
+\DoxyCodeLine{8     \mbox{\hyperlink{classSoilSensor}{SoilSensor}}(uint8\_t address, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115::Mux}} muxSelect);}
+\DoxyCodeLine{9     \mbox{\hyperlink{classSoilSensor}{\string~SoilSensor}}();}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     \textcolor{keywordtype}{double} readMoisture();}
+\DoxyCodeLine{12     \textcolor{keywordtype}{bool} calibrate();}
+\DoxyCodeLine{13     \textcolor{keywordtype}{void} setWetCalValue(int16\_t wetValue);}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} setDryCalValue(int16\_t dryValue);}
+\DoxyCodeLine{15     int16\_t getWetCalValue();}
+\DoxyCodeLine{16     int16\_t getDryCalValue();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \mbox{\hyperlink{classADS1115}{ADS1115}} ads1115; \textcolor{comment}{// Composition: SoilSensor has an ADS1115 object}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21     }
+\DoxyCodeLine{22     \textcolor{comment}{// Calibration constants}}
+\DoxyCodeLine{23     \textcolor{keyword}{static} \textcolor{keyword}{const} int16\_t CAL\_WET\_DEFAULT = 32768;   \textcolor{comment}{// 2\string^15}}
+\DoxyCodeLine{24     \textcolor{keyword}{static} \textcolor{keyword}{const} int16\_t CAL\_DRY\_DEFAULT = 0;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{double} moisture;}
+\DoxyCodeLine{27     int16\_t calWetValue;}
+\DoxyCodeLine{28     int16\_t calDryValue;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{comment}{// Private helper functions}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{double} map(\textcolor{keywordtype}{double} x, \textcolor{keywordtype}{double} in\_min, \textcolor{keywordtype}{double} in\_max, \textcolor{keywordtype}{double} out\_min, \textcolor{keywordtype}{double} out\_max);}
+\DoxyCodeLine{32     \textcolor{keywordtype}{double} constrain(\textcolor{keywordtype}{double} x, \textcolor{keywordtype}{double} min, \textcolor{keywordtype}{double} max);}
+\DoxyCodeLine{33 \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SOILSENSOR\_H}}
+\DoxyCodeLine{36 }
+
+\end{DoxyCode}

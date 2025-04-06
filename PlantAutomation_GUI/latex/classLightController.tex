@@ -1,0 +1,219 @@
+\hypertarget{classLightController}{}\doxysection{Light\+Controller Class Reference}
+\label{classLightController}\index{LightController@{LightController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLightController_aecca869d76ae7f5a6b641e56bb54a906}{Light\+Controller}} (int pin, const time\+\_\+t \&daily\+On, const time\+\_\+t \&daily\+Off)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classLightController}{Light\+Controller}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLightController_ae82bce5fe191ad14f43da8aa5d2c1f5b}{Light\+Controller}} (int pin)
+\begin{DoxyCompactList}\small\item\em Overloaded Constructor for \mbox{\hyperlink{classLightController}{Light\+Controller}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLightController_a6e12a6c63e18517cff2723e3d85ec28b}\label{classLightController_a6e12a6c63e18517cff2723e3d85ec28b}} 
+{\bfseries $\sim$\+Light\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classLightController}{Light\+Controller}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightController_ac1b0b7069a74c8abe91a0db3403caecd}{turn\+On}} ()
+\begin{DoxyCompactList}\small\item\em Turn on the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightController_a1446643e96343bb6842c3637741be65b}{turn\+Off}} ()
+\begin{DoxyCompactList}\small\item\em Turn off the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightController_a0f79475cbced221e622f4044c602f04b}{toggle}} ()
+\begin{DoxyCompactList}\small\item\em Toggle the light status. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLightController_ac3203d635efc4d9118e23d876b24fc2c}{is\+On}} ()
+\begin{DoxyCompactList}\small\item\em Get the light status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightController_a74af9a1625ca426bf5990d2dbd5a6e00}{set\+Daily\+On}} (const time\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Set the time to turn on the light after activation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightController_a788b71fa9d5577d9dae6890030047108}{set\+Daily\+Off}} (const time\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Set the time to turn off the light after activation. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{classLightController_a36529024a673fa685763d0069a02d5ba}{get\+Daily\+On\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get the time to turn on the light after activation. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{classLightController_a5e0509d3169da27a9c28ce8e7a752716}{get\+Daily\+Off\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get the time to turn off the light after activation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classLightController_a28d57a361302fd50612c6738624d4e78}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classLightController}{Light\+Controller}} \&lc)
+\begin{DoxyCompactList}\small\item\em Overloaded operator for debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLightController_aecca869d76ae7f5a6b641e56bb54a906}\label{classLightController_aecca869d76ae7f5a6b641e56bb54a906}} 
+\index{LightController@{LightController}!LightController@{LightController}}
+\index{LightController@{LightController}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{LightController()}{LightController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Light\+Controller\+::\+Light\+Controller (\begin{DoxyParamCaption}\item[{int}]{pin,  }\item[{const time\+\_\+t \&}]{daily\+On,  }\item[{const time\+\_\+t \&}]{daily\+Off }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classLightController}{Light\+Controller}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & GPIO pin number. \\
+\hline
+{\em daily\+On} & Time to turn on light after activation. \\
+\hline
+{\em daily\+Off} & Time to turn off light after activation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLightController_ae82bce5fe191ad14f43da8aa5d2c1f5b}\label{classLightController_ae82bce5fe191ad14f43da8aa5d2c1f5b}} 
+\index{LightController@{LightController}!LightController@{LightController}}
+\index{LightController@{LightController}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{LightController()}{LightController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Light\+Controller\+::\+Light\+Controller (\begin{DoxyParamCaption}\item[{int}]{pin }\end{DoxyParamCaption})}
+
+
+
+Overloaded Constructor for \mbox{\hyperlink{classLightController}{Light\+Controller}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & GPIO pin number. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLightController_a5e0509d3169da27a9c28ce8e7a752716}\label{classLightController_a5e0509d3169da27a9c28ce8e7a752716}} 
+\index{LightController@{LightController}!getDailyOffTime@{getDailyOffTime}}
+\index{getDailyOffTime@{getDailyOffTime}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{getDailyOffTime()}{getDailyOffTime()}}
+{\footnotesize\ttfamily time\+\_\+t Light\+Controller\+::get\+Daily\+Off\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the time to turn off the light after activation. 
+
+Get time to turn off light after activation.
+
+\begin{DoxyReturn}{Returns}
+Time to turn off the light.
+
+Time to turn off light. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLightController_a36529024a673fa685763d0069a02d5ba}\label{classLightController_a36529024a673fa685763d0069a02d5ba}} 
+\index{LightController@{LightController}!getDailyOnTime@{getDailyOnTime}}
+\index{getDailyOnTime@{getDailyOnTime}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{getDailyOnTime()}{getDailyOnTime()}}
+{\footnotesize\ttfamily time\+\_\+t Light\+Controller\+::get\+Daily\+On\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the time to turn on the light after activation. 
+
+Get time to turn on light after activation.
+
+\begin{DoxyReturn}{Returns}
+Time to turn on the light.
+
+Time to turn on light. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLightController_ac3203d635efc4d9118e23d876b24fc2c}\label{classLightController_ac3203d635efc4d9118e23d876b24fc2c}} 
+\index{LightController@{LightController}!isOn@{isOn}}
+\index{isOn@{isOn}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{isOn()}{isOn()}}
+{\footnotesize\ttfamily bool Light\+Controller\+::is\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the light status. 
+
+Get light status.
+
+\begin{DoxyReturn}{Returns}
+True if the light is on, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLightController_a788b71fa9d5577d9dae6890030047108}\label{classLightController_a788b71fa9d5577d9dae6890030047108}} 
+\index{LightController@{LightController}!setDailyOff@{setDailyOff}}
+\index{setDailyOff@{setDailyOff}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{setDailyOff()}{setDailyOff()}}
+{\footnotesize\ttfamily void Light\+Controller\+::set\+Daily\+Off (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+
+
+Set the time to turn off the light after activation. 
+
+Set time to turn off light after activation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time to turn off the light.\\
+\hline
+{\em time} & Time to turn off light after activation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLightController_a74af9a1625ca426bf5990d2dbd5a6e00}\label{classLightController_a74af9a1625ca426bf5990d2dbd5a6e00}} 
+\index{LightController@{LightController}!setDailyOn@{setDailyOn}}
+\index{setDailyOn@{setDailyOn}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{setDailyOn()}{setDailyOn()}}
+{\footnotesize\ttfamily void Light\+Controller\+::set\+Daily\+On (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+
+
+Set the time to turn on the light after activation. 
+
+Set time to turn on light after activation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time to turn on the light.\\
+\hline
+{\em time} & Time to turn on light after activation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLightController_a0f79475cbced221e622f4044c602f04b}\label{classLightController_a0f79475cbced221e622f4044c602f04b}} 
+\index{LightController@{LightController}!toggle@{toggle}}
+\index{toggle@{toggle}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{toggle()}{toggle()}}
+{\footnotesize\ttfamily void Light\+Controller\+::toggle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Toggle the light status. 
+
+Toggle light status. \mbox{\Hypertarget{classLightController_a1446643e96343bb6842c3637741be65b}\label{classLightController_a1446643e96343bb6842c3637741be65b}} 
+\index{LightController@{LightController}!turnOff@{turnOff}}
+\index{turnOff@{turnOff}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{turnOff()}{turnOff()}}
+{\footnotesize\ttfamily void Light\+Controller\+::turn\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn off the light. 
+
+Turn off light. \mbox{\Hypertarget{classLightController_ac1b0b7069a74c8abe91a0db3403caecd}\label{classLightController_ac1b0b7069a74c8abe91a0db3403caecd}} 
+\index{LightController@{LightController}!turnOn@{turnOn}}
+\index{turnOn@{turnOn}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{turnOn()}{turnOn()}}
+{\footnotesize\ttfamily void Light\+Controller\+::turn\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn on the light. 
+
+Turn on light. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classLightController_a28d57a361302fd50612c6738624d4e78}\label{classLightController_a28d57a361302fd50612c6738624d4e78}} 
+\index{LightController@{LightController}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!LightController@{LightController}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classLightController}{Light\+Controller}} \&}]{lc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloaded operator for debugging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream. \\
+\hline
+{\em lc} & \mbox{\hyperlink{classLightController}{Light\+Controller}} object to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the output stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Light\+Controller.\+h\item 
+Light\+Controller.\+cpp\end{DoxyCompactItemize}

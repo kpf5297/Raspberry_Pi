@@ -1,0 +1,70 @@
+\hypertarget{classLogger}{}\doxysection{Logger Class Reference}
+\label{classLogger}\index{Logger@{Logger}}
+
+
+The \mbox{\hyperlink{classLogger}{Logger}} class provides a simple logging mechanism.  
+
+
+
+
+{\ttfamily \#include $<$Logging.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogger_a4e5c2cc5904b29a98f3ecf3a9a67e74f}{Logger}} (const std\+::string \&file\+Name=\char`\"{}log.\+csv\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classLogger}{Logger}} instance with an optional file name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classLogger_a1d70dc4e382384ee712b731f3a6e64e0}{log\+Event}} (const std\+::string \&log\+Level, const std\+::string \&event\+Name, const std\+::string \&details)
+\begin{DoxyCompactList}\small\item\em Logs an event with the specified log level, event name, and details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classLogger}{Logger}} class provides a simple logging mechanism. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogger_a4e5c2cc5904b29a98f3ecf3a9a67e74f}\label{classLogger_a4e5c2cc5904b29a98f3ecf3a9a67e74f}} 
+\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name = {\ttfamily \char`\"{}log.csv\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classLogger}{Logger}} instance with an optional file name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the log file. Defaults to \char`\"{}log.\+csv\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogger_a1d70dc4e382384ee712b731f3a6e64e0}\label{classLogger_a1d70dc4e382384ee712b731f3a6e64e0}} 
+\index{Logger@{Logger}!logEvent@{logEvent}}
+\index{logEvent@{logEvent}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logEvent()}{logEvent()}}
+{\footnotesize\ttfamily std\+::string Logger\+::log\+Event (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{log\+Level,  }\item[{const std\+::string \&}]{event\+Name,  }\item[{const std\+::string \&}]{details }\end{DoxyParamCaption})}
+
+
+
+Logs an event with the specified log level, event name, and details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Level} & The log level of the event. \\
+\hline
+{\em event\+Name} & The name of the event. \\
+\hline
+{\em details} & Additional details about the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed log entry as a string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Logging.\+h\item 
+Logging.\+cpp\end{DoxyCompactItemize}

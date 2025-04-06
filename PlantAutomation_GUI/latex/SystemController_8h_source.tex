@@ -1,0 +1,85 @@
+\hypertarget{SystemController_8h_source}{}\doxysection{System\+Controller.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// GardenController.h}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef SYSTEMCONTROLLER\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define SYSTEMCONTROLLER\_H}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}WaterPump.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}LightController.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}SoilSensor.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}Logging.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{classSystemController}{SystemController}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{classSystemController_a18c5d8dc89d53277ee27f4df9354bee5}{SystemController}}(uint8\_t soilSensorAddress, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115::Mux}} soilSensorMux,}
+\DoxyCodeLine{24                      \textcolor{keywordtype}{int} lightControllerPin, \textcolor{keyword}{const} time\_t\& lightOnTime, \textcolor{keyword}{const} time\_t\& lightOffTime,}
+\DoxyCodeLine{25                      \textcolor{keywordtype}{int} waterPumpPin, \textcolor{keywordtype}{int} pumpIgnoreTimeSeconds, \textcolor{keywordtype}{int} pumpDurationSeconds);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{30     \mbox{\hyperlink{classSystemController_a1639cbfad2ed00a5e402a2fcc2f8ac1a}{\string~SystemController}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a024c48737268882a59fbdc4564115a2a}{activateGarden}}(\textcolor{keyword}{const} time\_t currentTime);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a87bbac3c2166d4fa1256eb06ff6cf57d}{deactivateGarden}}(\textcolor{keyword}{const} time\_t currentTime);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a355250de8f92f58fb56f3503a3210c69}{controlLight}}(\textcolor{keyword}{const} time\_t currentTime);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_add80d37afa9745cdc1e806b01a02ab7f}{controlWaterPump}}(\textcolor{keyword}{const} time\_t currentTime);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{double} \mbox{\hyperlink{classSystemController_a48cc1f621c0fd77e11ae6bd9dcc6fae5}{readSoilMoisture}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classSystemController_a717115f10cee282527aaed8a4e8cfd5a}{calibrateSoilSensor}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a7f3bb0b63eaa1680a95b8f4551fe9166}{setSoilMoistureThreshold}}(\textcolor{keywordtype}{double} threshold);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{78     \textcolor{keywordtype}{double} \mbox{\hyperlink{classSystemController_af8387fe9caa207bc2d601e0d7a0b5f5e}{getSoilMoistureThreshold}}();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_aebff6eab43fe145c9a06bd8139820a8c}{setLightOnTime}}(\textcolor{keyword}{const} time\_t lightOnTime);}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a0e1acd3cc686be74007f348d1216fe67}{setLightOffTime}}(\textcolor{keyword}{const} time\_t lightOffTime);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{96     time\_t \mbox{\hyperlink{classSystemController_aebe36d77ff14f163fc56fc288b1cc58d}{getLightOnTime}}();}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{102     time\_t \mbox{\hyperlink{classSystemController_a0b750e2f043224b6de27c4113a93c097}{getLightOffTime}}();}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_ab3c6f03ceec9b4c3429962ad87c1e5e1}{setWaterPumpOnTime}}(\textcolor{keyword}{const} time\_t waterPumpOnTime);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{114     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a9c6ea97477f4122c02cf5e31c3cc271d}{setWaterPumpOffTime}}(\textcolor{keyword}{const} time\_t waterPumpOffTime);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{120     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a21b79a8603006664f2d3af3eb9a718f2}{setPumpIgnoreTime}}(\textcolor{keyword}{const} time\_t pumpIgnoreTime);}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{126     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a3b1aeadb40a6f53b94816cd436ae0d73}{setPumpDuration}}(\textcolor{keywordtype}{int} pumpDuration);}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{135     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classSystemController_ae56f38acf1abc32303b07c29bb92713e}{isTimeInRange}}(\textcolor{keyword}{const} time\_t\& time, \textcolor{keyword}{const} time\_t\& start, \textcolor{keyword}{const} time\_t\& end);}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{143     time\_t \mbox{\hyperlink{classSystemController_a96901be53142ff8469145acf3aa16557}{addSecondsToTime}}(\textcolor{keyword}{const} time\_t\& time, \textcolor{keyword}{const} \textcolor{keywordtype}{int}\& seconds);}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{149     time\_t \mbox{\hyperlink{classSystemController_ad620d20b4ecbe792d145fdf11fd8b195}{getNextPumpTime}}();}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{155     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a1bd0b3a4c8c5163a5b010715d7895733}{setLightOn}}(\textcolor{keywordtype}{bool} on);}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{161     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_a029eeba8742fc956af99c9b939352edd}{setWaterPumpOn}}(\textcolor{keywordtype}{bool} on);}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{168     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystemController_ac9da75f173675e2167f3845e8640a0dd}{setSoilMoistureCalibrationValues}}(int16\_t wetValue, int16\_t dryValue);}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170 \textcolor{keyword}{private}:}
+\DoxyCodeLine{171     \mbox{\hyperlink{classSoilSensor}{SoilSensor}} soilSensor;              \textcolor{comment}{// Soil sensor controlled by the controller}}
+\DoxyCodeLine{172     \mbox{\hyperlink{classLightController}{LightController}} lightController;    \textcolor{comment}{// Light controller controlled by the controller}}
+\DoxyCodeLine{173     \mbox{\hyperlink{classWaterPump}{WaterPump}} waterPump;                \textcolor{comment}{// Water pump controlled by the controller}}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175     \textcolor{keywordtype}{double} soilMoistureThreshold;       \textcolor{comment}{// Soil moisture threshold}}
+\DoxyCodeLine{176     time\_t lightOnTime;                 \textcolor{comment}{// Time to turn on the light}}
+\DoxyCodeLine{177     time\_t lightOffTime;                \textcolor{comment}{// Time to turn off the light}}
+\DoxyCodeLine{178     time\_t waterPumpOnTime;             \textcolor{comment}{// Time to turn on the water pump}}
+\DoxyCodeLine{179     time\_t waterPumpOffTime;            \textcolor{comment}{// Time to turn off the water pump}}
+\DoxyCodeLine{180     \textcolor{keywordtype}{int} pumpIgnoreTime;                 \textcolor{comment}{// Time to ignore water pump activation after last activation}}
+\DoxyCodeLine{181     \textcolor{keywordtype}{int} pumpDuration;                   \textcolor{comment}{// Water pump activation duration}}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183     std::string id;                           \textcolor{comment}{// ID of the system controller for logging}}
+\DoxyCodeLine{184 \};}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// GARDENCONTROLLER\_H}}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{188 }
+
+\end{DoxyCode}

@@ -1,0 +1,450 @@
+\hypertarget{classSystemController}{}\doxysection{System\+Controller Class Reference}
+\label{classSystemController}\index{SystemController@{SystemController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystemController_a18c5d8dc89d53277ee27f4df9354bee5}{System\+Controller}} (uint8\+\_\+t soil\+Sensor\+Address, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115\+::\+Mux}} soil\+Sensor\+Mux, int light\+Controller\+Pin, const time\+\_\+t \&light\+On\+Time, const time\+\_\+t \&light\+Off\+Time, int water\+Pump\+Pin, int pump\+Ignore\+Time\+Seconds, int pump\+Duration\+Seconds)
+\begin{DoxyCompactList}\small\item\em Constructor for Garden\+Controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystemController_a1639cbfad2ed00a5e402a2fcc2f8ac1a}{$\sim$\+System\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for Garden\+Controller. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a024c48737268882a59fbdc4564115a2a}{activate\+Garden}} (const time\+\_\+t current\+Time)
+\begin{DoxyCompactList}\small\item\em Activate the garden components based on the current time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a87bbac3c2166d4fa1256eb06ff6cf57d}{deactivate\+Garden}} (const time\+\_\+t current\+Time)
+\begin{DoxyCompactList}\small\item\em Deactivate the garden components based on the current time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a355250de8f92f58fb56f3503a3210c69}{control\+Light}} (const time\+\_\+t current\+Time)
+\begin{DoxyCompactList}\small\item\em Control the light based on the current time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_add80d37afa9745cdc1e806b01a02ab7f}{control\+Water\+Pump}} (const time\+\_\+t current\+Time)
+\begin{DoxyCompactList}\small\item\em Control the water pump based on the current time. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSystemController_a48cc1f621c0fd77e11ae6bd9dcc6fae5}{read\+Soil\+Moisture}} ()
+\begin{DoxyCompactList}\small\item\em Read soil moisture from the soil sensor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSystemController_a717115f10cee282527aaed8a4e8cfd5a}{calibrate\+Soil\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Calibrate the soil sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a7f3bb0b63eaa1680a95b8f4551fe9166}{set\+Soil\+Moisture\+Threshold}} (double threshold)
+\begin{DoxyCompactList}\small\item\em Set the soil moisture threshold. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSystemController_af8387fe9caa207bc2d601e0d7a0b5f5e}{get\+Soil\+Moisture\+Threshold}} ()
+\begin{DoxyCompactList}\small\item\em Get the soil moisture threshold. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_aebff6eab43fe145c9a06bd8139820a8c}{set\+Light\+On\+Time}} (const time\+\_\+t light\+On\+Time)
+\begin{DoxyCompactList}\small\item\em Set the time to turn on the light after activation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a0e1acd3cc686be74007f348d1216fe67}{set\+Light\+Off\+Time}} (const time\+\_\+t light\+Off\+Time)
+\begin{DoxyCompactList}\small\item\em Set the time to turn off the light after activation. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{classSystemController_aebe36d77ff14f163fc56fc288b1cc58d}{get\+Light\+On\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get the time to turn on the light after activation. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{classSystemController_a0b750e2f043224b6de27c4113a93c097}{get\+Light\+Off\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get the time to turn off the light after activation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_ab3c6f03ceec9b4c3429962ad87c1e5e1}{set\+Water\+Pump\+On\+Time}} (const time\+\_\+t water\+Pump\+On\+Time)
+\begin{DoxyCompactList}\small\item\em Set the time to turn on the water pump after activation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a9c6ea97477f4122c02cf5e31c3cc271d}{set\+Water\+Pump\+Off\+Time}} (const time\+\_\+t water\+Pump\+Off\+Time)
+\begin{DoxyCompactList}\small\item\em Set the time to turn off the water pump after activation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a21b79a8603006664f2d3af3eb9a718f2}{set\+Pump\+Ignore\+Time}} (const time\+\_\+t pump\+Ignore\+Time)
+\begin{DoxyCompactList}\small\item\em Set the time to ignore water pump activation after the last activation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a3b1aeadb40a6f53b94816cd436ae0d73}{set\+Pump\+Duration}} (int pump\+Duration)
+\begin{DoxyCompactList}\small\item\em Set the duration to run the water pump when activated. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSystemController_ae56f38acf1abc32303b07c29bb92713e}{is\+Time\+In\+Range}} (const time\+\_\+t \&time, const time\+\_\+t \&start, const time\+\_\+t \&end)
+\begin{DoxyCompactList}\small\item\em Helper function to determine if the time is within range. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{classSystemController_a96901be53142ff8469145acf3aa16557}{add\+Seconds\+To\+Time}} (const time\+\_\+t \&time, const int \&seconds)
+\begin{DoxyCompactList}\small\item\em Helper function to add seconds to a time\+\_\+t. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{classSystemController_ad620d20b4ecbe792d145fdf11fd8b195}{get\+Next\+Pump\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get the next time to activate the water pump. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a1bd0b3a4c8c5163a5b010715d7895733}{set\+Light\+On}} (bool on)
+\begin{DoxyCompactList}\small\item\em Turn the light on or off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_a029eeba8742fc956af99c9b939352edd}{set\+Water\+Pump\+On}} (bool on)
+\begin{DoxyCompactList}\small\item\em Turn the water pump on or off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystemController_ac9da75f173675e2167f3845e8640a0dd}{set\+Soil\+Moisture\+Calibration\+Values}} (int16\+\_\+t wet\+Value, int16\+\_\+t dry\+Value)
+\begin{DoxyCompactList}\small\item\em Manualy set the soil moisture calibration values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSystemController_a18c5d8dc89d53277ee27f4df9354bee5}\label{classSystemController_a18c5d8dc89d53277ee27f4df9354bee5}} 
+\index{SystemController@{SystemController}!SystemController@{SystemController}}
+\index{SystemController@{SystemController}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{SystemController()}{SystemController()}}
+{\footnotesize\ttfamily System\+Controller\+::\+System\+Controller (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{soil\+Sensor\+Address,  }\item[{\mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115\+::\+Mux}}}]{soil\+Sensor\+Mux,  }\item[{int}]{light\+Controller\+Pin,  }\item[{const time\+\_\+t \&}]{light\+On\+Time,  }\item[{const time\+\_\+t \&}]{light\+Off\+Time,  }\item[{int}]{water\+Pump\+Pin,  }\item[{int}]{pump\+Ignore\+Time\+Seconds,  }\item[{int}]{pump\+Duration\+Seconds }\end{DoxyParamCaption})}
+
+
+
+Constructor for Garden\+Controller. 
+
+Constructor for \mbox{\hyperlink{classSystemController}{System\+Controller}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em soil\+Sensor\+Address} & Address of the soil sensor. \\
+\hline
+{\em soil\+Sensor\+Mux} & Mux configuration for the soil sensor. \\
+\hline
+{\em light\+Controller\+Pin} & GPIO pin number for the light controller. \\
+\hline
+{\em light\+On\+Time} & Time to turn on light after activation. \\
+\hline
+{\em light\+Off\+Time} & Time to turn off light after activation. \\
+\hline
+{\em water\+Pump\+Pin} & GPIO pin number for the water pump. \\
+\hline
+{\em pump\+Ignore\+Time\+Seconds} & Time to ignore the pump after activation. \\
+\hline
+{\em pump\+Duration\+Seconds} & Duration to run the pump when activated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a1639cbfad2ed00a5e402a2fcc2f8ac1a}\label{classSystemController_a1639cbfad2ed00a5e402a2fcc2f8ac1a}} 
+\index{SystemController@{SystemController}!````~SystemController@{$\sim$SystemController}}
+\index{````~SystemController@{$\sim$SystemController}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{$\sim$SystemController()}{~SystemController()}}
+{\footnotesize\ttfamily System\+Controller\+::$\sim$\+System\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for Garden\+Controller. 
+
+Destructor for \mbox{\hyperlink{classSystemController}{System\+Controller}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSystemController_a024c48737268882a59fbdc4564115a2a}\label{classSystemController_a024c48737268882a59fbdc4564115a2a}} 
+\index{SystemController@{SystemController}!activateGarden@{activateGarden}}
+\index{activateGarden@{activateGarden}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{activateGarden()}{activateGarden()}}
+{\footnotesize\ttfamily void System\+Controller\+::activate\+Garden (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Activate the garden components based on the current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & Current time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a96901be53142ff8469145acf3aa16557}\label{classSystemController_a96901be53142ff8469145acf3aa16557}} 
+\index{SystemController@{SystemController}!addSecondsToTime@{addSecondsToTime}}
+\index{addSecondsToTime@{addSecondsToTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{addSecondsToTime()}{addSecondsToTime()}}
+{\footnotesize\ttfamily time\+\_\+t System\+Controller\+::add\+Seconds\+To\+Time (\begin{DoxyParamCaption}\item[{const time\+\_\+t \&}]{time,  }\item[{const int \&}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Helper function to add seconds to a time\+\_\+t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time to add seconds to. \\
+\hline
+{\em seconds} & Seconds to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time\+\_\+t with seconds added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemController_a717115f10cee282527aaed8a4e8cfd5a}\label{classSystemController_a717115f10cee282527aaed8a4e8cfd5a}} 
+\index{SystemController@{SystemController}!calibrateSoilSensor@{calibrateSoilSensor}}
+\index{calibrateSoilSensor@{calibrateSoilSensor}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{calibrateSoilSensor()}{calibrateSoilSensor()}}
+{\footnotesize\ttfamily bool System\+Controller\+::calibrate\+Soil\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calibrate the soil sensor. 
+
+\begin{DoxyReturn}{Returns}
+True if calibration is successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemController_a355250de8f92f58fb56f3503a3210c69}\label{classSystemController_a355250de8f92f58fb56f3503a3210c69}} 
+\index{SystemController@{SystemController}!controlLight@{controlLight}}
+\index{controlLight@{controlLight}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{controlLight()}{controlLight()}}
+{\footnotesize\ttfamily void System\+Controller\+::control\+Light (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Control the light based on the current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & Current time.\\
+\hline
+\end{DoxyParams}
+The light will be activated if the current time is within the light activation time. 
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & Current time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_add80d37afa9745cdc1e806b01a02ab7f}\label{classSystemController_add80d37afa9745cdc1e806b01a02ab7f}} 
+\index{SystemController@{SystemController}!controlWaterPump@{controlWaterPump}}
+\index{controlWaterPump@{controlWaterPump}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{controlWaterPump()}{controlWaterPump()}}
+{\footnotesize\ttfamily void System\+Controller\+::control\+Water\+Pump (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Control the water pump based on the current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & Current time.\\
+\hline
+\end{DoxyParams}
+The water pump will be activated if the current time is within the water pump activation time and the soil moisture is below the threshold. 
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & Current time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a87bbac3c2166d4fa1256eb06ff6cf57d}\label{classSystemController_a87bbac3c2166d4fa1256eb06ff6cf57d}} 
+\index{SystemController@{SystemController}!deactivateGarden@{deactivateGarden}}
+\index{deactivateGarden@{deactivateGarden}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{deactivateGarden()}{deactivateGarden()}}
+{\footnotesize\ttfamily void System\+Controller\+::deactivate\+Garden (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Deactivate the garden components based on the current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & Current time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a0b750e2f043224b6de27c4113a93c097}\label{classSystemController_a0b750e2f043224b6de27c4113a93c097}} 
+\index{SystemController@{SystemController}!getLightOffTime@{getLightOffTime}}
+\index{getLightOffTime@{getLightOffTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{getLightOffTime()}{getLightOffTime()}}
+{\footnotesize\ttfamily time\+\_\+t System\+Controller\+::get\+Light\+Off\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the time to turn off the light after activation. 
+
+\begin{DoxyReturn}{Returns}
+Time to turn off the light. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemController_aebe36d77ff14f163fc56fc288b1cc58d}\label{classSystemController_aebe36d77ff14f163fc56fc288b1cc58d}} 
+\index{SystemController@{SystemController}!getLightOnTime@{getLightOnTime}}
+\index{getLightOnTime@{getLightOnTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{getLightOnTime()}{getLightOnTime()}}
+{\footnotesize\ttfamily time\+\_\+t System\+Controller\+::get\+Light\+On\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the time to turn on the light after activation. 
+
+\begin{DoxyReturn}{Returns}
+Time to turn on the light. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemController_ad620d20b4ecbe792d145fdf11fd8b195}\label{classSystemController_ad620d20b4ecbe792d145fdf11fd8b195}} 
+\index{SystemController@{SystemController}!getNextPumpTime@{getNextPumpTime}}
+\index{getNextPumpTime@{getNextPumpTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{getNextPumpTime()}{getNextPumpTime()}}
+{\footnotesize\ttfamily time\+\_\+t System\+Controller\+::get\+Next\+Pump\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the next time to activate the water pump. 
+
+\begin{DoxyReturn}{Returns}
+Time to activate the water pump.
+
+Next time to activate the water pump. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemController_af8387fe9caa207bc2d601e0d7a0b5f5e}\label{classSystemController_af8387fe9caa207bc2d601e0d7a0b5f5e}} 
+\index{SystemController@{SystemController}!getSoilMoistureThreshold@{getSoilMoistureThreshold}}
+\index{getSoilMoistureThreshold@{getSoilMoistureThreshold}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{getSoilMoistureThreshold()}{getSoilMoistureThreshold()}}
+{\footnotesize\ttfamily double System\+Controller\+::get\+Soil\+Moisture\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the soil moisture threshold. 
+
+\begin{DoxyReturn}{Returns}
+Soil moisture threshold. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemController_ae56f38acf1abc32303b07c29bb92713e}\label{classSystemController_ae56f38acf1abc32303b07c29bb92713e}} 
+\index{SystemController@{SystemController}!isTimeInRange@{isTimeInRange}}
+\index{isTimeInRange@{isTimeInRange}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{isTimeInRange()}{isTimeInRange()}}
+{\footnotesize\ttfamily bool System\+Controller\+::is\+Time\+In\+Range (\begin{DoxyParamCaption}\item[{const time\+\_\+t \&}]{time,  }\item[{const time\+\_\+t \&}]{start,  }\item[{const time\+\_\+t \&}]{end }\end{DoxyParamCaption})}
+
+
+
+Helper function to determine if the time is within range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time to check. \\
+\hline
+{\em start} & Start time. \\
+\hline
+{\em end} & End time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the time is within range, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemController_a48cc1f621c0fd77e11ae6bd9dcc6fae5}\label{classSystemController_a48cc1f621c0fd77e11ae6bd9dcc6fae5}} 
+\index{SystemController@{SystemController}!readSoilMoisture@{readSoilMoisture}}
+\index{readSoilMoisture@{readSoilMoisture}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{readSoilMoisture()}{readSoilMoisture()}}
+{\footnotesize\ttfamily double System\+Controller\+::read\+Soil\+Moisture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read soil moisture from the soil sensor. 
+
+\begin{DoxyReturn}{Returns}
+Soil moisture level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystemController_a0e1acd3cc686be74007f348d1216fe67}\label{classSystemController_a0e1acd3cc686be74007f348d1216fe67}} 
+\index{SystemController@{SystemController}!setLightOffTime@{setLightOffTime}}
+\index{setLightOffTime@{setLightOffTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setLightOffTime()}{setLightOffTime()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Light\+Off\+Time (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{light\+Off\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the time to turn off the light after activation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light\+Off\+Time} & Time to turn off the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a1bd0b3a4c8c5163a5b010715d7895733}\label{classSystemController_a1bd0b3a4c8c5163a5b010715d7895733}} 
+\index{SystemController@{SystemController}!setLightOn@{setLightOn}}
+\index{setLightOn@{setLightOn}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setLightOn()}{setLightOn()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Light\+On (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})}
+
+
+
+Turn the light on or off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & True to turn the light on, false to turn the light off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_aebff6eab43fe145c9a06bd8139820a8c}\label{classSystemController_aebff6eab43fe145c9a06bd8139820a8c}} 
+\index{SystemController@{SystemController}!setLightOnTime@{setLightOnTime}}
+\index{setLightOnTime@{setLightOnTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setLightOnTime()}{setLightOnTime()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Light\+On\+Time (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{light\+On\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the time to turn on the light after activation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light\+On\+Time} & Time to turn on the light. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a3b1aeadb40a6f53b94816cd436ae0d73}\label{classSystemController_a3b1aeadb40a6f53b94816cd436ae0d73}} 
+\index{SystemController@{SystemController}!setPumpDuration@{setPumpDuration}}
+\index{setPumpDuration@{setPumpDuration}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setPumpDuration()}{setPumpDuration()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Pump\+Duration (\begin{DoxyParamCaption}\item[{int}]{pump\+Duration }\end{DoxyParamCaption})}
+
+
+
+Set the duration to run the water pump when activated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pump\+Duration} & Duration to run the water pump. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a21b79a8603006664f2d3af3eb9a718f2}\label{classSystemController_a21b79a8603006664f2d3af3eb9a718f2}} 
+\index{SystemController@{SystemController}!setPumpIgnoreTime@{setPumpIgnoreTime}}
+\index{setPumpIgnoreTime@{setPumpIgnoreTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setPumpIgnoreTime()}{setPumpIgnoreTime()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Pump\+Ignore\+Time (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{pump\+Ignore\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the time to ignore water pump activation after the last activation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pump\+Ignore\+Time} & Time to ignore the pump after activation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_ac9da75f173675e2167f3845e8640a0dd}\label{classSystemController_ac9da75f173675e2167f3845e8640a0dd}} 
+\index{SystemController@{SystemController}!setSoilMoistureCalibrationValues@{setSoilMoistureCalibrationValues}}
+\index{setSoilMoistureCalibrationValues@{setSoilMoistureCalibrationValues}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setSoilMoistureCalibrationValues()}{setSoilMoistureCalibrationValues()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Soil\+Moisture\+Calibration\+Values (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{wet\+Value,  }\item[{int16\+\_\+t}]{dry\+Value }\end{DoxyParamCaption})}
+
+
+
+Manualy set the soil moisture calibration values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wet\+Value} & Calibration value for wet soil. \\
+\hline
+{\em dry\+Value} & Calibration value for dry soil. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a7f3bb0b63eaa1680a95b8f4551fe9166}\label{classSystemController_a7f3bb0b63eaa1680a95b8f4551fe9166}} 
+\index{SystemController@{SystemController}!setSoilMoistureThreshold@{setSoilMoistureThreshold}}
+\index{setSoilMoistureThreshold@{setSoilMoistureThreshold}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setSoilMoistureThreshold()}{setSoilMoistureThreshold()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Soil\+Moisture\+Threshold (\begin{DoxyParamCaption}\item[{double}]{threshold }\end{DoxyParamCaption})}
+
+
+
+Set the soil moisture threshold. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em threshold} & Threshold value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a9c6ea97477f4122c02cf5e31c3cc271d}\label{classSystemController_a9c6ea97477f4122c02cf5e31c3cc271d}} 
+\index{SystemController@{SystemController}!setWaterPumpOffTime@{setWaterPumpOffTime}}
+\index{setWaterPumpOffTime@{setWaterPumpOffTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setWaterPumpOffTime()}{setWaterPumpOffTime()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Water\+Pump\+Off\+Time (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{water\+Pump\+Off\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the time to turn off the water pump after activation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+Pump\+Off\+Time} & Time to turn off the water pump. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_a029eeba8742fc956af99c9b939352edd}\label{classSystemController_a029eeba8742fc956af99c9b939352edd}} 
+\index{SystemController@{SystemController}!setWaterPumpOn@{setWaterPumpOn}}
+\index{setWaterPumpOn@{setWaterPumpOn}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setWaterPumpOn()}{setWaterPumpOn()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Water\+Pump\+On (\begin{DoxyParamCaption}\item[{bool}]{on }\end{DoxyParamCaption})}
+
+
+
+Turn the water pump on or off. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & True to turn the water pump on, false to turn the water pump off. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystemController_ab3c6f03ceec9b4c3429962ad87c1e5e1}\label{classSystemController_ab3c6f03ceec9b4c3429962ad87c1e5e1}} 
+\index{SystemController@{SystemController}!setWaterPumpOnTime@{setWaterPumpOnTime}}
+\index{setWaterPumpOnTime@{setWaterPumpOnTime}!SystemController@{SystemController}}
+\doxysubsubsection{\texorpdfstring{setWaterPumpOnTime()}{setWaterPumpOnTime()}}
+{\footnotesize\ttfamily void System\+Controller\+::set\+Water\+Pump\+On\+Time (\begin{DoxyParamCaption}\item[{const time\+\_\+t}]{water\+Pump\+On\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the time to turn on the water pump after activation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+Pump\+On\+Time} & Time to turn on the water pump. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+System\+Controller.\+h\item 
+\mbox{\hyperlink{SystemController_8cpp}{System\+Controller.\+cpp}}\end{DoxyCompactItemize}

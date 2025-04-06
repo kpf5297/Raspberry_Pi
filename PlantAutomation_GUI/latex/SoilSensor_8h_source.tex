@@ -1,0 +1,52 @@
+\hypertarget{SoilSensor_8h_source}{}\doxysection{Soil\+Sensor.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SOILSENSOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SOILSENSOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ADS1115_8h}{ADS1115.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classSoilSensor}{SoilSensor}} \{}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{classSoilSensor_a13d0467de5d5a6df2fc43b1d9dcf8c2e}{SoilSensor}}(uint8\_t address, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115::Mux}} muxSelect);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{22     \mbox{\hyperlink{classSoilSensor_a7b75df9491744583bfe968275242a74b}{\string~SoilSensor}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{double} \mbox{\hyperlink{classSoilSensor_abd9a3c69ac5ed0778f63e473bb160cd7}{readMoisture}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classSoilSensor_abf5b8e2ab380a66951c74b14c6917776}{calibrate}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSoilSensor_a28d7d5b82e829498b808d89b011de971}{setWetCalValue}}(int16\_t wetValue);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{47     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classSoilSensor_a28d7d5b82e829498b808d89b011de971}{setWetCalValue}}(int16\_t wetValue, \mbox{\hyperlink{classSoilSensor}{SoilSensor}}* sensor);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSoilSensor_afa7e34401f244f2d770e86a306a08bd3}{setDryCalValue}}(int16\_t dryValue);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{60     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classSoilSensor_afa7e34401f244f2d770e86a306a08bd3}{setDryCalValue}}(int16\_t dryValue, \mbox{\hyperlink{classSoilSensor}{SoilSensor}}* sensor);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{66     int16\_t \mbox{\hyperlink{classSoilSensor_a3cd1e261751c947b7515f44ff8179eff}{getWetCalValue}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{72     int16\_t \mbox{\hyperlink{classSoilSensor_a4d8a1b93198b63cac3c2bc4820773175}{getDryCalValue}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{78     \mbox{\hyperlink{classADS1115}{ADS1115}} \mbox{\hyperlink{classSoilSensor_add7a21ddb16fa7a44fe9c86917d1a4c8}{ads1115}}; \textcolor{comment}{// Composition: SoilSensor has an ADS1115 object}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{keyword}{private}:}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115::Mux}} mux;                               \textcolor{comment}{// Mux configuration}}
+\DoxyCodeLine{83     \textcolor{keyword}{static} \textcolor{keyword}{const} int16\_t CAL\_WET\_DEFAULT = 32768;   \textcolor{comment}{// 2\string^15}}
+\DoxyCodeLine{84     \textcolor{keyword}{static} \textcolor{keyword}{const} int16\_t CAL\_DRY\_DEFAULT = 0;       \textcolor{comment}{// 0}}
+\DoxyCodeLine{85     \textcolor{keywordtype}{double} moisture;                                \textcolor{comment}{// Moisture level}}
+\DoxyCodeLine{86     int16\_t calWetValue;                            \textcolor{comment}{// Calibration value for wet soil}}
+\DoxyCodeLine{87     int16\_t calDryValue;                            \textcolor{comment}{// Calibration value for dry soil}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 }
+\DoxyCodeLine{99     \textcolor{keywordtype}{double} map(\textcolor{keywordtype}{double} x, \textcolor{keywordtype}{double} in\_min, \textcolor{keywordtype}{double} in\_max, \textcolor{keywordtype}{double} out\_min, \textcolor{keywordtype}{double} out\_max);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{108     \textcolor{keywordtype}{double} constrain(\textcolor{keywordtype}{double} x, \textcolor{keywordtype}{double} min, \textcolor{keywordtype}{double} max);}
+\DoxyCodeLine{109 \};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SOILSENSOR\_H}}
+\DoxyCodeLine{112 }
+
+\end{DoxyCode}

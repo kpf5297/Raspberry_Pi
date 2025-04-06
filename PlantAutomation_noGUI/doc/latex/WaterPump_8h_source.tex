@@ -1,0 +1,43 @@
+\hypertarget{WaterPump_8h_source}{}\doxysection{Water\+Pump.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef WATERPUMP\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define WATERPUMP\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <gpiod.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classWaterPump}{WaterPump}} \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{classWaterPump_a08f58fc6e431338dc18253e3687ffba1}{WaterPump}}(\textcolor{keywordtype}{int} pin, \textcolor{keywordtype}{int} ignoreTimeSeconds, \textcolor{keywordtype}{int} pumpTimeSeconds);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{22     \mbox{\hyperlink{classWaterPump_a4e1a71564fae593a703c093371771f9d}{\string~WaterPump}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{classWaterPump_a792c34b141e90e8808e6fd347fa06f1a}{activate}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{classWaterPump_ac8ee13650c039ecda79bc3469acb4af6}{deactivate}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{classWaterPump_a8da0cca7de3c804c6e9089a5bde415db}{toggle}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classWaterPump_a5d6e171be015440efece69d82814fcdf}{getStatus}}();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{classWaterPump_a41003e64470772424d9b07491675ea7e}{setActivationDuration}}(\textcolor{keywordtype}{int} pumpTimeSeconds);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} \mbox{\hyperlink{classWaterPump_a975699350fe59989dacd84a63fb2cd32}{getActivationDuration}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{classWaterPump_aaa78df91ec3ea3acba517396b914763d}{setIgnoreTime}}(\textcolor{keywordtype}{int} ignoreTimeSeconds);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{int} \mbox{\hyperlink{classWaterPump_a615cd1ce4f5dad5b94466fd4961aeb94}{getIgnoreTime}}();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{keyword}{private}:}
+\DoxyCodeLine{70     gpiod\_chip* chip;           \textcolor{comment}{// GPIO chip}}
+\DoxyCodeLine{71     gpiod\_line* line;           \textcolor{comment}{// GPIO line}}
+\DoxyCodeLine{72     \textcolor{keywordtype}{int} pinNum;                 \textcolor{comment}{// GPIO pin number}}
+\DoxyCodeLine{73     \textcolor{keywordtype}{bool} isRunning = \textcolor{keyword}{false};     \textcolor{comment}{// Water pump status}}
+\DoxyCodeLine{74     \textcolor{keywordtype}{bool} activated = \textcolor{keyword}{false};     \textcolor{comment}{// Water pump activation status}}
+\DoxyCodeLine{75     \textcolor{keywordtype}{int} activationDuration;     \textcolor{comment}{// Water pump activation duration}}
+\DoxyCodeLine{76     \textcolor{keywordtype}{int} ignoreTime;             \textcolor{comment}{// Time to ignore water pump activation after last activation}}
+\DoxyCodeLine{77 \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// WATERPUMP\_H}}
+
+\end{DoxyCode}

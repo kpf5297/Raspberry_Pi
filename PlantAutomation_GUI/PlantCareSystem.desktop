@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Plant Care
+Exec=/home/kpf5297/Code/build-PlantCareSystem-Desktop-Debug/PlantCareSystem
+Icon=/home/kpf5297/Code/build-PlantCareSystem-Desktop-Debug/plant-icon.png
+Terminal=false

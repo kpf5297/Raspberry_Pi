@@ -1,0 +1,48 @@
+\hypertarget{LightDriver_8cpp}{}\doxysection{Light\+Driver.\+cpp File Reference}
+\label{LightDriver_8cpp}\index{LightDriver.cpp@{LightDriver.cpp}}
+
+
+A simple program to demonstrate the usage of the \mbox{\hyperlink{classLightController}{Light\+Controller}} class for controlling LEDs.  
+
+
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Logging.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Light\+Controller.\+h\char`\"{}}\newline
+Include dependency graph for Light\+Driver.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{LightDriver_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em The main function of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{LightDriver_8cpp_a621b4ad352df3add2c7b56cbda6861ae}\label{LightDriver_8cpp_a621b4ad352df3add2c7b56cbda6861ae}} 
+int {\bfseries BLUE\+\_\+\+LED\+\_\+\+PIN} = 17
+\item 
+\mbox{\Hypertarget{LightDriver_8cpp_a450b014406523a4c623d91135d5914e8}\label{LightDriver_8cpp_a450b014406523a4c623d91135d5914e8}} 
+int {\bfseries GREEN\+\_\+\+LED\+\_\+\+PIN} = 27
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple program to demonstrate the usage of the \mbox{\hyperlink{classLightController}{Light\+Controller}} class for controlling LEDs. 
+
+Compile with\+: g++ -\/I/home/kpf5297/\+Code/\+Manual\+Control \mbox{\hyperlink{LightDriver_8cpp}{Light\+Driver.\+cpp}} Logging.\+cpp Light\+Controller.\+cpp -\/o Light\+Driver -\/lgpiod -\/lrt -\/lpthread 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{LightDriver_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{LightDriver_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{LightDriver.cpp@{LightDriver.cpp}!main@{main}}
+\index{main@{main}!LightDriver.cpp@{LightDriver.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The main function of the program. 
+
+\begin{DoxyReturn}{Returns}
+0 on successful execution. 
+\end{DoxyReturn}

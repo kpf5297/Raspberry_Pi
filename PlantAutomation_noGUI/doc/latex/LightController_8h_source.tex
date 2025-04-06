@@ -1,0 +1,48 @@
+\hypertarget{LightController_8h_source}{}\doxysection{Light\+Controller.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// LightController.h}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef LIGHTCONTROLLER\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define LIGHTCONTROLLER\_H}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <gpiod.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{classLightController}{LightController}} \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{classLightController_aecca869d76ae7f5a6b641e56bb54a906}{LightController}}(\textcolor{keywordtype}{int} pin, \textcolor{keyword}{const} time\_t\& dailyOn, \textcolor{keyword}{const} time\_t\& dailyOff);}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{22     \mbox{\hyperlink{classLightController_aecca869d76ae7f5a6b641e56bb54a906}{LightController}}(\textcolor{keywordtype}{int} pin);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{27     \mbox{\hyperlink{classLightController_a6e12a6c63e18517cff2723e3d85ec28b}{\string~LightController}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightController_ac1b0b7069a74c8abe91a0db3403caecd}{turnOn}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightController_a1446643e96343bb6842c3637741be65b}{turnOff}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightController_a0f79475cbced221e622f4044c602f04b}{toggle}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classLightController_ac3203d635efc4d9118e23d876b24fc2c}{isOn}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightController_a74af9a1625ca426bf5990d2dbd5a6e00}{setDailyOn}}(\textcolor{keyword}{const} time\_t time);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightController_a788b71fa9d5577d9dae6890030047108}{setDailyOff}}(\textcolor{keyword}{const} time\_t time);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{66     time\_t \mbox{\hyperlink{classLightController_a36529024a673fa685763d0069a02d5ba}{getDailyOnTime}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{72     time\_t \mbox{\hyperlink{classLightController_a5e0509d3169da27a9c28ce8e7a752716}{getDailyOffTime}}();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{80     \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{classLightController_a28d57a361302fd50612c6738624d4e78}{operator<<}}(std::ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{classLightController}{LightController}}\& lc);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{keyword}{private}:}
+\DoxyCodeLine{83     gpiod\_chip *chip;       \textcolor{comment}{// GPIO chip}}
+\DoxyCodeLine{84     gpiod\_line *line;       \textcolor{comment}{// GPIO line}}
+\DoxyCodeLine{85     \textcolor{keywordtype}{int} pinNum;             \textcolor{comment}{// GPIO pin number}}
+\DoxyCodeLine{86     \textcolor{keywordtype}{bool} on;                \textcolor{comment}{// Light status}}
+\DoxyCodeLine{87     time\_t dailyOnTime;     \textcolor{comment}{// Time to turn on light after activation}}
+\DoxyCodeLine{88     time\_t dailyOffTime;    \textcolor{comment}{// Time to turn off light after activation}}
+\DoxyCodeLine{89 \};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LIGHTCONTROLLER\_H}}
+
+\end{DoxyCode}

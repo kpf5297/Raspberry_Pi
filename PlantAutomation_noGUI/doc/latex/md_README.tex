@@ -1,0 +1,76 @@
+{\bfseries{Author\+:}} Kevin Fox {\bfseries{Email\+:}} \href{mailto:kpf5297@psu.edu}{\texttt{ kpf5297@psu.\+edu}}
+
+\hypertarget{md_README_autotoc_md1}{}\doxysection{Table of Contents}\label{md_README_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Abstract
+\item Functional Specification
+\begin{DoxyItemize}
+\item Soil Moisture Sensing
+\item Lighting Control
+\item Water Supply Control
+\item User Interface
+\end{DoxyItemize}
+\item Software Design
+\begin{DoxyItemize}
+\item System State Diagram
+\item System Class Diagram
+\end{DoxyItemize}
+\item Progress
+\item Materials Required
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md2}{}\doxysection{Abstract}\label{md_README_autotoc_md2}
+The Automated Plant Care System project aims to enhance plant care by utilizing a Raspberry Pi 4B microcomputer to monitor soil moisture levels and control lighting and water supply for optimal plant growth. This system is designed to make plant care effortless, with the core components including capacitive soil moisture sensors, solid-\/state relays for lighting control, and a water pump. It has the potential to reduce water wastage while maintaining healthy plant soil moisture levels, even during extended periods of absence.\hypertarget{md_README_autotoc_md3}{}\doxysection{Functional Specification}\label{md_README_autotoc_md3}
+\hypertarget{md_README_autotoc_md4}{}\doxysubsection{Soil Moisture Sensing}\label{md_README_autotoc_md4}
+
+\begin{DoxyItemize}
+\item {\bfseries{Input\+:}} Soil moisture data from capacitive soil sensors through the ADC.
+\item {\bfseries{Output\+:}} Real-\/time soil moisture levels.
+\item {\bfseries{Operation\+:}} Periodically monitors soil moisture and provides data for decision-\/making.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md5}{}\doxysubsection{Lighting Control}\label{md_README_autotoc_md5}
+
+\begin{DoxyItemize}
+\item {\bfseries{Input\+:}} Desired lighting conditions (On/\+Off).
+\item {\bfseries{Output\+:}} Control signals to solid-\/state relays for lighting.
+\item {\bfseries{Operation\+:}} Adjusts lighting based on predefined conditions to promote plant growth.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md6}{}\doxysubsection{Water Supply Control}\label{md_README_autotoc_md6}
+
+\begin{DoxyItemize}
+\item {\bfseries{Input\+:}} Soil moisture thresholds for hydration.
+\item {\bfseries{Output\+:}} Control signals to the water pump solid-\/state relay.
+\item {\bfseries{Operation\+:}} Provides on-\/demand hydration to maintain soil moisture levels.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md7}{}\doxysubsection{User Interface}\label{md_README_autotoc_md7}
+
+\begin{DoxyItemize}
+\item {\bfseries{Input\+:}} User-\/defined settings and manual control.
+\item {\bfseries{Output\+:}} User input and system status.
+\item {\bfseries{Operation\+:}} Offers a menu-\/based interface for monitoring and manual control.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md8}{}\doxysection{Software Design}\label{md_README_autotoc_md8}
+\hypertarget{md_README_autotoc_md9}{}\doxysubsection{System State Diagram}\label{md_README_autotoc_md9}
+The system state diagram illustrates the procedure followed by the system to maintain the optimal plant environment. Users can set the desired moisture level and make changes to light cycle times. When monitoring is active, the system continuously monitors soil moisture and initiates the hydration cycle when necessary. Lighting is controlled based on a timer and duration method.
+
+\hypertarget{md_README_autotoc_md10}{}\doxysubsection{System Class Diagram}\label{md_README_autotoc_md10}
+The system class diagram displays the relationships between various classes used to fulfill the functional requirements. The architecture follows the Model-\/\+View-\/\+Controller (MVC) pattern. The {\ttfamily main\+Activity} class handles the program\textquotesingle{}s logic, while user experience elements are located in the {\ttfamily user\+Interface} class.
+
+\hypertarget{md_README_autotoc_md11}{}\doxysection{Progress}\label{md_README_autotoc_md11}
+At this stage, the project\textquotesingle{}s architecture has been designed successfully, and hardware assembly is complete. Code is managed through Git for traceability. Classes for reading soil moisture data via I2C communication and controlling relays are functional in the prototype stage. However, timing aspects of the system and components require further refinement.
+
+The project is progressing as per the documented work plan. Upcoming work includes refining system responses, implementing user-\/friendly menu-\/based interfaces, addressing timing issues for system stability, and conducting extensive testing under various conditions.\hypertarget{md_README_autotoc_md12}{}\doxysection{Materials Required}\label{md_README_autotoc_md12}
+\hypertarget{md_README_autotoc_md13}{}\doxysubsection{Bill Of Materials}\label{md_README_autotoc_md13}
+
+\begin{DoxyEnumerate}
+\item Raspberry Pi 4B (Raspberry Pi Foundation)
+\item Case with Power Supply, 4A (i\+Uniker)
+\item RPi GPIO Terminal Block Breakout Board Module (CZH-\/\+LABS)
+\item 4-\/Tier Wire Shelving Unit Metal Storage Rack (REGILLER)
+\item LED Plant Grow Light Strips, 6000K Full Spectrum, 5V (Wiaxulay)
+\item 1.\+5\char`\"{} 3\+:1 Waterproof Heat Shrink Tubing (\+XHF) 7. Capacitive Soil Moisture Sensor, Output voltage\+: 0 $\sim$ 3.\+0 VDC (\+Esooho) 8. Water Pump, OD outlet\+: 0.\+29\char`\"{}/7.5mm (Wayin\+Top)
+\item Vinyl Tubing, ID 0.\+22\char`\"{}/5.\+54mm, OD 0.\+32\char`\"{}/8.20mm (Generic)
+\item Wire, 18 AWG (Generic)
+\item \mbox{\hyperlink{classADS1115}{ADS1115}} 16-\/Bit, 16 Byte, 4-\/Channel, I2C, ADC (Hi\+Letgo)
+\item 1/4 inch Cord Protector Wire Loom Tubing Cable Sleeve (Alex-\/\+Tech)
+\end{DoxyEnumerate}
+
+
+
+\DoxyHorRuler{0}
+ 

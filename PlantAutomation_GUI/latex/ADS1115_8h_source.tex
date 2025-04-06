@@ -1,0 +1,77 @@
+\hypertarget{ADS1115_8h_source}{}\doxysection{ADS1115.\+h}
+\mbox{\hyperlink{ADS1115_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef ADS1115\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define ADS1115\_H}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{classADS1115}{ADS1115}} \{}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keyword}{friend} \textcolor{keyword}{class }SoilMoistSensor;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \textcolor{keyword}{enum class} \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}} : uint16\_t \{}
+\DoxyCodeLine{27         AIN0\_AIN1 = 0x0000,         }
+\DoxyCodeLine{28         AIN0\_AIN3 = 0x1000,         }
+\DoxyCodeLine{29         AIN1\_AIN3 = 0x2000,         }
+\DoxyCodeLine{30         AIN2\_AIN3 = 0x3000,         }
+\DoxyCodeLine{31         AIN0\_GND = 0x4000,          }
+\DoxyCodeLine{32         AIN1\_GND = 0x5000,          }
+\DoxyCodeLine{33         AIN2\_GND = 0x6000,          }
+\DoxyCodeLine{34         AIN3\_GND = 0x7000           }
+\DoxyCodeLine{35     \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41     \textcolor{keyword}{enum class} \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}{Pga}} : uint16\_t \{}
+\DoxyCodeLine{42         FS\_6\_144V = 0x0000,         }
+\DoxyCodeLine{43         FS\_4\_096V = 0x0200,         }
+\DoxyCodeLine{44         FS\_2\_048V = 0x0400,         }
+\DoxyCodeLine{45         FS\_1\_024V = 0x0600,         }
+\DoxyCodeLine{46         FS\_0\_512V = 0x0800,         }
+\DoxyCodeLine{47         FS\_0\_256V = 0x0A00          }
+\DoxyCodeLine{48     \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{54     \textcolor{keyword}{enum class} \mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}{Mode}} : uint16\_t \{}
+\DoxyCodeLine{55         CONTINUOUS = 0x0000,        }
+\DoxyCodeLine{56         SINGLE\_SHOT = 0x0100        }
+\DoxyCodeLine{57     \};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{63     \textcolor{keyword}{enum class} \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}{DataRate}} : uint16\_t \{}
+\DoxyCodeLine{64         SPS\_8 = 0x0000,             }
+\DoxyCodeLine{65         SPS\_16 = 0x0020,            }
+\DoxyCodeLine{66         SPS\_32 = 0x0040,            }
+\DoxyCodeLine{67         SPS\_64 = 0x0060,            }
+\DoxyCodeLine{68         SPS\_128 = 0x0080,           }
+\DoxyCodeLine{69         SPS\_250 = 0x00A0,           }
+\DoxyCodeLine{70         SPS\_475 = 0x00C0,           }
+\DoxyCodeLine{71         SPS\_860 = 0x00E0            }
+\DoxyCodeLine{72     \};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{79     \mbox{\hyperlink{classADS1115_ab72b9d4f6724d60e7c73ab36ff1c5111}{ADS1115}}(uint8\_t address, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}} muxSelect);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{84     \mbox{\hyperlink{classADS1115_aa646dc96bee97bb39b003a50332d0ba4}{\string~ADS1115}}();}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{94     int16\_t \mbox{\hyperlink{classADS1115_ae09f693590ddffdc8034f61cbc4f9257}{read}}(\mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}} mux, \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}{Pga}} pga, \mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}{Mode}} mode, \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}{DataRate}} dataRate);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{100     int16\_t \mbox{\hyperlink{classADS1115_a6ed77b7cef782273f4e5728a62fc4a99}{read0}}();}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{106     int16\_t \mbox{\hyperlink{classADS1115_a8c60e8675751e6b139187ed59b6b5634}{read1}}();}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{112     int16\_t \mbox{\hyperlink{classADS1115_af261453380d71a4fde149ecddaf82e87}{read2}}();}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{118     int16\_t \mbox{\hyperlink{classADS1115_a0250a9698ddd349d5747ba37923d50c3}{read3}}();}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120 \textcolor{keyword}{private}:}
+\DoxyCodeLine{121     uint8\_t m\_address;          }
+\DoxyCodeLine{122     uint8\_t m\_buf[3];           }
+\DoxyCodeLine{123     \textcolor{keywordtype}{int} m\_fd;                   }
+\DoxyCodeLine{124     \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}} mux;                    }
+\DoxyCodeLine{125     \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}{Pga}} pga;                    }
+\DoxyCodeLine{126     \mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}{Mode}} mode;                  }
+\DoxyCodeLine{127     \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}{DataRate}} dataRate;          }
+\DoxyCodeLine{128 \};}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ADS1115\_H}}
+
+\end{DoxyCode}

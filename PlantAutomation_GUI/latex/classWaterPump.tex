@@ -1,0 +1,173 @@
+\hypertarget{classWaterPump}{}\doxysection{Water\+Pump Class Reference}
+\label{classWaterPump}\index{WaterPump@{WaterPump}}
+
+
+The \mbox{\hyperlink{classWaterPump}{Water\+Pump}} class represents a water pump controlled by GPIO.  
+
+
+
+
+{\ttfamily \#include $<$Water\+Pump.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWaterPump_a08f58fc6e431338dc18253e3687ffba1}{Water\+Pump}} (int pin, int ignore\+Time\+Seconds, int pump\+Time\+Seconds)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classWaterPump}{Water\+Pump}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaterPump_a4e1a71564fae593a703c093371771f9d}\label{classWaterPump_a4e1a71564fae593a703c093371771f9d}} 
+{\bfseries $\sim$\+Water\+Pump} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classWaterPump}{Water\+Pump}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterPump_a792c34b141e90e8808e6fd347fa06f1a}{activate}} ()
+\begin{DoxyCompactList}\small\item\em Activate the water pump. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterPump_ac8ee13650c039ecda79bc3469acb4af6}{deactivate}} ()
+\begin{DoxyCompactList}\small\item\em Deactivate the water pump. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaterPump_a8da0cca7de3c804c6e9089a5bde415db}\label{classWaterPump_a8da0cca7de3c804c6e9089a5bde415db}} 
+void {\bfseries toggle} ()
+\begin{DoxyCompactList}\small\item\em Toggle the water pump status. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWaterPump_a5d6e171be015440efece69d82814fcdf}{get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Get the water pump status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterPump_a41003e64470772424d9b07491675ea7e}{set\+Activation\+Duration}} (int pump\+Time\+Seconds)
+\begin{DoxyCompactList}\small\item\em Set the water pump activation duration. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWaterPump_a975699350fe59989dacd84a63fb2cd32}{get\+Activation\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Get the water pump activation duration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterPump_aaa78df91ec3ea3acba517396b914763d}{set\+Ignore\+Time}} (int ignore\+Time\+Seconds)
+\begin{DoxyCompactList}\small\item\em Set the time to ignore water pump activation after the last activation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWaterPump_a615cd1ce4f5dad5b94466fd4961aeb94}{get\+Ignore\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get the time to ignore water pump activation after the last activation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classWaterPump}{Water\+Pump}} class represents a water pump controlled by GPIO. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWaterPump_a08f58fc6e431338dc18253e3687ffba1}\label{classWaterPump_a08f58fc6e431338dc18253e3687ffba1}} 
+\index{WaterPump@{WaterPump}!WaterPump@{WaterPump}}
+\index{WaterPump@{WaterPump}!WaterPump@{WaterPump}}
+\doxysubsubsection{\texorpdfstring{WaterPump()}{WaterPump()}}
+{\footnotesize\ttfamily Water\+Pump\+::\+Water\+Pump (\begin{DoxyParamCaption}\item[{int}]{pin,  }\item[{int}]{ignore\+Time\+Seconds,  }\item[{int}]{pump\+Time\+Seconds }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classWaterPump}{Water\+Pump}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & GPIO pin number. \\
+\hline
+{\em ignore\+Time\+Seconds} & The number of seconds to ignore the pump after activation. \\
+\hline
+{\em pump\+Time\+Seconds} & The number of seconds to run the pump when activated.\\
+\hline
+{\em pin} & GPIO pin number. \\
+\hline
+{\em ignore\+Time\+Seconds} & Time to ignore water pump activation after the last activation. \\
+\hline
+{\em pump\+Time\+Seconds} & Time to run the water pump. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaterPump_a792c34b141e90e8808e6fd347fa06f1a}\label{classWaterPump_a792c34b141e90e8808e6fd347fa06f1a}} 
+\index{WaterPump@{WaterPump}!activate@{activate}}
+\index{activate@{activate}!WaterPump@{WaterPump}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily void Water\+Pump\+::activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Activate the water pump. 
+
+Turn on the water pump. \mbox{\Hypertarget{classWaterPump_ac8ee13650c039ecda79bc3469acb4af6}\label{classWaterPump_ac8ee13650c039ecda79bc3469acb4af6}} 
+\index{WaterPump@{WaterPump}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!WaterPump@{WaterPump}}
+\doxysubsubsection{\texorpdfstring{deactivate()}{deactivate()}}
+{\footnotesize\ttfamily void Water\+Pump\+::deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deactivate the water pump. 
+
+Turn off the water pump. \mbox{\Hypertarget{classWaterPump_a975699350fe59989dacd84a63fb2cd32}\label{classWaterPump_a975699350fe59989dacd84a63fb2cd32}} 
+\index{WaterPump@{WaterPump}!getActivationDuration@{getActivationDuration}}
+\index{getActivationDuration@{getActivationDuration}!WaterPump@{WaterPump}}
+\doxysubsubsection{\texorpdfstring{getActivationDuration()}{getActivationDuration()}}
+{\footnotesize\ttfamily int Water\+Pump\+::get\+Activation\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the water pump activation duration. 
+
+\begin{DoxyReturn}{Returns}
+The duration to run the water pump when activated.
+
+The duration to run the water pump. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterPump_a615cd1ce4f5dad5b94466fd4961aeb94}\label{classWaterPump_a615cd1ce4f5dad5b94466fd4961aeb94}} 
+\index{WaterPump@{WaterPump}!getIgnoreTime@{getIgnoreTime}}
+\index{getIgnoreTime@{getIgnoreTime}!WaterPump@{WaterPump}}
+\doxysubsubsection{\texorpdfstring{getIgnoreTime()}{getIgnoreTime()}}
+{\footnotesize\ttfamily int Water\+Pump\+::get\+Ignore\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the time to ignore water pump activation after the last activation. 
+
+\begin{DoxyReturn}{Returns}
+The number of seconds to ignore the pump after activation.
+
+Time to ignore water pump activation after the last activation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterPump_a5d6e171be015440efece69d82814fcdf}\label{classWaterPump_a5d6e171be015440efece69d82814fcdf}} 
+\index{WaterPump@{WaterPump}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!WaterPump@{WaterPump}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily bool Water\+Pump\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the water pump status. 
+
+\begin{DoxyReturn}{Returns}
+True if the water pump is running, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterPump_a41003e64470772424d9b07491675ea7e}\label{classWaterPump_a41003e64470772424d9b07491675ea7e}} 
+\index{WaterPump@{WaterPump}!setActivationDuration@{setActivationDuration}}
+\index{setActivationDuration@{setActivationDuration}!WaterPump@{WaterPump}}
+\doxysubsubsection{\texorpdfstring{setActivationDuration()}{setActivationDuration()}}
+{\footnotesize\ttfamily void Water\+Pump\+::set\+Activation\+Duration (\begin{DoxyParamCaption}\item[{int}]{pump\+Time\+Seconds }\end{DoxyParamCaption})}
+
+
+
+Set the water pump activation duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pump\+Time\+Seconds} & The duration to run the water pump when activated.\\
+\hline
+{\em pump\+Time\+Seconds} & Time to run the water pump. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterPump_aaa78df91ec3ea3acba517396b914763d}\label{classWaterPump_aaa78df91ec3ea3acba517396b914763d}} 
+\index{WaterPump@{WaterPump}!setIgnoreTime@{setIgnoreTime}}
+\index{setIgnoreTime@{setIgnoreTime}!WaterPump@{WaterPump}}
+\doxysubsubsection{\texorpdfstring{setIgnoreTime()}{setIgnoreTime()}}
+{\footnotesize\ttfamily void Water\+Pump\+::set\+Ignore\+Time (\begin{DoxyParamCaption}\item[{int}]{ignore\+Time\+Seconds }\end{DoxyParamCaption})}
+
+
+
+Set the time to ignore water pump activation after the last activation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ignore\+Time\+Seconds} & The number of seconds to ignore the pump after activation.\\
+\hline
+{\em ignore\+Time\+Seconds} & Time to ignore water pump activation after the last activation. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Water\+Pump.\+h\item 
+\mbox{\hyperlink{WaterPump_8cpp}{Water\+Pump.\+cpp}}\end{DoxyCompactItemize}

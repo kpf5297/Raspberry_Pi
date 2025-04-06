@@ -1,0 +1,331 @@
+\hypertarget{classADS1115}{}\doxysection{ADS1115 Class Reference}
+\label{classADS1115}\index{ADS1115@{ADS1115}}
+
+
+Represents an Analog-\/to-\/\+Digital Converter (ADC) device.  
+
+
+
+
+{\ttfamily \#include $<$ADS1115.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}} \+: uint16\+\_\+t \{ \newline
+\mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba08e3e2c17c28fe83d2c1f963527354ce}{AIN0\+\_\+\+AIN1}} = 0x0000
+, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba14ee2e5ac2933290a082d103877635f0}{AIN0\+\_\+\+AIN3}} = 0x1000
+, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47bac52ba977ba3efc9873be0a7760218299}{AIN1\+\_\+\+AIN3}} = 0x2000
+, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba0f351d4cd02a7e301fadc8ba9ce2b71e}{AIN2\+\_\+\+AIN3}} = 0x3000
+, \newline
+\mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47bac42217be46e58fd22b411d4b740dfb50}{AIN0\+\_\+\+GND}} = 0x4000
+, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba54ae711c2f59d1631889f12842767e38}{AIN1\+\_\+\+GND}} = 0x5000
+, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba730f50c6461e01450385cbdcbb0bc2c5}{AIN2\+\_\+\+GND}} = 0x6000
+, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba5053a6701de366498ba28afb72992291}{AIN3\+\_\+\+GND}} = 0x7000
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for analog input multiplexer configurations. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}{Pga}} \+: uint16\+\_\+t \{ \newline
+\mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111ae9976832265c7475d1358c9b068deda3}{FS\+\_\+6\+\_\+144V}} = 0x0000
+, \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a9e2aa42406961f48e2e47836bbc87700}{FS\+\_\+4\+\_\+096V}} = 0x0200
+, \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a1b9b14831f2fa26553f9e68a52c7c1e5}{FS\+\_\+2\+\_\+048V}} = 0x0400
+, \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a471c34f3a3b422c4af8db1af35b6c46d}{FS\+\_\+1\+\_\+024V}} = 0x0600
+, \newline
+\mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a5c0cfecb8abdfddf10e0191dc4d1a57d}{FS\+\_\+0\+\_\+512V}} = 0x0800
+, \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111ab34e75de7a160bc82ef821965cff95f4}{FS\+\_\+0\+\_\+256V}} = 0x0\+A00
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for programmable gain amplifier configurations. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}{Mode}} \+: uint16\+\_\+t \{ \mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67cab1fa9dd3af034b3ef4291579aa673c07}{CONTINUOUS}} = 0x0000
+, \mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67caefdc99dee0381881dbc1483a1dbd2429}{SINGLE\+\_\+\+SHOT}} = 0x0100
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for operation modes. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}{Data\+Rate}} \+: uint16\+\_\+t \{ \newline
+\mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a17718441f777cd42f95472229fbb509b}{SPS\+\_\+8}} = 0x0000
+, \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a6ec19385bc9ee3a18a8522e1bd215d8e}{SPS\+\_\+16}} = 0x0020
+, \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a70e30455bddf19664d06a0d030e70616}{SPS\+\_\+32}} = 0x0040
+, \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a8dda47a653e6a0d7e5e3a0f9422be7d7}{SPS\+\_\+64}} = 0x0060
+, \newline
+\mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46abefc3a4823ef16f54d0c361dde5e874f}{SPS\+\_\+128}} = 0x0080
+, \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46af2a42e51e319fcf86a91674ccb6c10c7}{SPS\+\_\+250}} = 0x00\+A0
+, \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a2ece2758a637dc766a84f0279a124167}{SPS\+\_\+475}} = 0x00\+C0
+, \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a10bf55b01316d98e60884c490983e6bb}{SPS\+\_\+860}} = 0x00\+E0
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for data rates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classADS1115_ab72b9d4f6724d60e7c73ab36ff1c5111}{ADS1115}} (uint8\+\_\+t address, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}} mux\+Select)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classADS1115}{ADS1115}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classADS1115_aa646dc96bee97bb39b003a50332d0ba4}\label{classADS1115_aa646dc96bee97bb39b003a50332d0ba4}} 
+{\bfseries $\sim$\+ADS1115} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classADS1115}{ADS1115}} object. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{classADS1115_ae09f693590ddffdc8034f61cbc4f9257}{read}} (\mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}} mux, \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}{Pga}} pga, \mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}{Mode}} mode, \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}{Data\+Rate}} data\+Rate)
+\begin{DoxyCompactList}\small\item\em Read the analog value from the ADC. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{classADS1115_a6ed77b7cef782273f4e5728a62fc4a99}{read0}} ()
+\begin{DoxyCompactList}\small\item\em Read the analog value from AIN0 (single-\/ended, single-\/shot mode). \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{classADS1115_a8c60e8675751e6b139187ed59b6b5634}{read1}} ()
+\begin{DoxyCompactList}\small\item\em Read the analog value from AIN1 (single-\/ended, single-\/shot mode). \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{classADS1115_af261453380d71a4fde149ecddaf82e87}{read2}} ()
+\begin{DoxyCompactList}\small\item\em Read the analog value from AIN2 (single-\/ended, single-\/shot mode). \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{classADS1115_a0250a9698ddd349d5747ba37923d50c3}{read3}} ()
+\begin{DoxyCompactList}\small\item\em Read the analog value from AIN3 (single-\/ended, single-\/shot mode). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classADS1115_a55379b976ebfd5331b832402f155d5bb}\label{classADS1115_a55379b976ebfd5331b832402f155d5bb}} 
+class {\bfseries Soil\+Moist\+Sensor}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an Analog-\/to-\/\+Digital Converter (ADC) device. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}} 
+\index{ADS1115@{ADS1115}!DataRate@{DataRate}}
+\index{DataRate@{DataRate}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{DataRate}{DataRate}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}{ADS1115\+::\+Data\+Rate}} \+: uint16\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for data rates. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPS\_8@{SPS\_8}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SPS\_8@{SPS\_8}}}\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a17718441f777cd42f95472229fbb509b}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a17718441f777cd42f95472229fbb509b}} 
+SPS\+\_\+8&8 samples per second \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPS\_16@{SPS\_16}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SPS\_16@{SPS\_16}}}\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a6ec19385bc9ee3a18a8522e1bd215d8e}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a6ec19385bc9ee3a18a8522e1bd215d8e}} 
+SPS\+\_\+16&16 samples per second \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPS\_32@{SPS\_32}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SPS\_32@{SPS\_32}}}\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a70e30455bddf19664d06a0d030e70616}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a70e30455bddf19664d06a0d030e70616}} 
+SPS\+\_\+32&32 samples per second \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPS\_64@{SPS\_64}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SPS\_64@{SPS\_64}}}\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a8dda47a653e6a0d7e5e3a0f9422be7d7}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a8dda47a653e6a0d7e5e3a0f9422be7d7}} 
+SPS\+\_\+64&64 samples per second \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPS\_128@{SPS\_128}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SPS\_128@{SPS\_128}}}\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46abefc3a4823ef16f54d0c361dde5e874f}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46abefc3a4823ef16f54d0c361dde5e874f}} 
+SPS\+\_\+128&128 samples per second (default) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPS\_250@{SPS\_250}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SPS\_250@{SPS\_250}}}\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46af2a42e51e319fcf86a91674ccb6c10c7}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46af2a42e51e319fcf86a91674ccb6c10c7}} 
+SPS\+\_\+250&250 samples per second \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPS\_475@{SPS\_475}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SPS\_475@{SPS\_475}}}\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a2ece2758a637dc766a84f0279a124167}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a2ece2758a637dc766a84f0279a124167}} 
+SPS\+\_\+475&475 samples per second \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPS\_860@{SPS\_860}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SPS\_860@{SPS\_860}}}\mbox{\Hypertarget{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a10bf55b01316d98e60884c490983e6bb}\label{classADS1115_acfbcfb6a69166b305b42c0e0b243df46a10bf55b01316d98e60884c490983e6bb}} 
+SPS\+\_\+860&860 samples per second \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}\label{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}} 
+\index{ADS1115@{ADS1115}!Mode@{Mode}}
+\index{Mode@{Mode}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}{ADS1115\+::\+Mode}} \+: uint16\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for operation modes. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTINUOUS@{CONTINUOUS}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!CONTINUOUS@{CONTINUOUS}}}\mbox{\Hypertarget{classADS1115_ac9157986faebaac8fa4f7c70907bd67cab1fa9dd3af034b3ef4291579aa673c07}\label{classADS1115_ac9157986faebaac8fa4f7c70907bd67cab1fa9dd3af034b3ef4291579aa673c07}} 
+CONTINUOUS&Continuous conversion mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SINGLE\_SHOT@{SINGLE\_SHOT}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!SINGLE\_SHOT@{SINGLE\_SHOT}}}\mbox{\Hypertarget{classADS1115_ac9157986faebaac8fa4f7c70907bd67caefdc99dee0381881dbc1483a1dbd2429}\label{classADS1115_ac9157986faebaac8fa4f7c70907bd67caefdc99dee0381881dbc1483a1dbd2429}} 
+SINGLE\+\_\+\+SHOT&Power-\/down single-\/shot mode \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}} 
+\index{ADS1115@{ADS1115}!Mux@{Mux}}
+\index{Mux@{Mux}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{Mux}{Mux}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115\+::\+Mux}} \+: uint16\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for analog input multiplexer configurations. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AIN0\_AIN1@{AIN0\_AIN1}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!AIN0\_AIN1@{AIN0\_AIN1}}}\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba08e3e2c17c28fe83d2c1f963527354ce}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba08e3e2c17c28fe83d2c1f963527354ce}} 
+AIN0\+\_\+\+AIN1&Analog input AIN0 and AIN1 differential \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AIN0\_AIN3@{AIN0\_AIN3}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!AIN0\_AIN3@{AIN0\_AIN3}}}\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba14ee2e5ac2933290a082d103877635f0}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba14ee2e5ac2933290a082d103877635f0}} 
+AIN0\+\_\+\+AIN3&Analog input AIN0 and AIN3 differential \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AIN1\_AIN3@{AIN1\_AIN3}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!AIN1\_AIN3@{AIN1\_AIN3}}}\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47bac52ba977ba3efc9873be0a7760218299}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47bac52ba977ba3efc9873be0a7760218299}} 
+AIN1\+\_\+\+AIN3&Analog input AIN1 and AIN3 differential \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AIN2\_AIN3@{AIN2\_AIN3}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!AIN2\_AIN3@{AIN2\_AIN3}}}\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba0f351d4cd02a7e301fadc8ba9ce2b71e}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba0f351d4cd02a7e301fadc8ba9ce2b71e}} 
+AIN2\+\_\+\+AIN3&Analog input AIN2 and AIN3 differential \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AIN0\_GND@{AIN0\_GND}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!AIN0\_GND@{AIN0\_GND}}}\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47bac42217be46e58fd22b411d4b740dfb50}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47bac42217be46e58fd22b411d4b740dfb50}} 
+AIN0\+\_\+\+GND&Analog input AIN0 and GND single-\/ended \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AIN1\_GND@{AIN1\_GND}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!AIN1\_GND@{AIN1\_GND}}}\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba54ae711c2f59d1631889f12842767e38}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba54ae711c2f59d1631889f12842767e38}} 
+AIN1\+\_\+\+GND&Analog input AIN1 and GND single-\/ended \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AIN2\_GND@{AIN2\_GND}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!AIN2\_GND@{AIN2\_GND}}}\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba730f50c6461e01450385cbdcbb0bc2c5}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba730f50c6461e01450385cbdcbb0bc2c5}} 
+AIN2\+\_\+\+GND&Analog input AIN2 and GND single-\/ended \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AIN3\_GND@{AIN3\_GND}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!AIN3\_GND@{AIN3\_GND}}}\mbox{\Hypertarget{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba5053a6701de366498ba28afb72992291}\label{classADS1115_a171c82ff519a2a97702b4d3506aaf47ba5053a6701de366498ba28afb72992291}} 
+AIN3\+\_\+\+GND&Analog input AIN3 and GND single-\/ended \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}\label{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}} 
+\index{ADS1115@{ADS1115}!Pga@{Pga}}
+\index{Pga@{Pga}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{Pga}{Pga}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}{ADS1115\+::\+Pga}} \+: uint16\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for programmable gain amplifier configurations. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FS\_6\_144V@{FS\_6\_144V}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!FS\_6\_144V@{FS\_6\_144V}}}\mbox{\Hypertarget{classADS1115_aaff9aa373fd117b0190bf9a969c1f111ae9976832265c7475d1358c9b068deda3}\label{classADS1115_aaff9aa373fd117b0190bf9a969c1f111ae9976832265c7475d1358c9b068deda3}} 
+FS\+\_\+6\+\_\+144V&+/-\/6.144V range = Gain 2/3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FS\_4\_096V@{FS\_4\_096V}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!FS\_4\_096V@{FS\_4\_096V}}}\mbox{\Hypertarget{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a9e2aa42406961f48e2e47836bbc87700}\label{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a9e2aa42406961f48e2e47836bbc87700}} 
+FS\+\_\+4\+\_\+096V&+/-\/4.096V range = Gain 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FS\_2\_048V@{FS\_2\_048V}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!FS\_2\_048V@{FS\_2\_048V}}}\mbox{\Hypertarget{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a1b9b14831f2fa26553f9e68a52c7c1e5}\label{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a1b9b14831f2fa26553f9e68a52c7c1e5}} 
+FS\+\_\+2\+\_\+048V&+/-\/2.048V range = Gain 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FS\_1\_024V@{FS\_1\_024V}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!FS\_1\_024V@{FS\_1\_024V}}}\mbox{\Hypertarget{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a471c34f3a3b422c4af8db1af35b6c46d}\label{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a471c34f3a3b422c4af8db1af35b6c46d}} 
+FS\+\_\+1\+\_\+024V&+/-\/1.024V range = Gain 4 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FS\_0\_512V@{FS\_0\_512V}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!FS\_0\_512V@{FS\_0\_512V}}}\mbox{\Hypertarget{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a5c0cfecb8abdfddf10e0191dc4d1a57d}\label{classADS1115_aaff9aa373fd117b0190bf9a969c1f111a5c0cfecb8abdfddf10e0191dc4d1a57d}} 
+FS\+\_\+0\+\_\+512V&+/-\/0.512V range = Gain 8 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FS\_0\_256V@{FS\_0\_256V}!ADS1115@{ADS1115}}\index{ADS1115@{ADS1115}!FS\_0\_256V@{FS\_0\_256V}}}\mbox{\Hypertarget{classADS1115_aaff9aa373fd117b0190bf9a969c1f111ab34e75de7a160bc82ef821965cff95f4}\label{classADS1115_aaff9aa373fd117b0190bf9a969c1f111ab34e75de7a160bc82ef821965cff95f4}} 
+FS\+\_\+0\+\_\+256V&+/-\/0.256V range = Gain 16 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classADS1115_ab72b9d4f6724d60e7c73ab36ff1c5111}\label{classADS1115_ab72b9d4f6724d60e7c73ab36ff1c5111}} 
+\index{ADS1115@{ADS1115}!ADS1115@{ADS1115}}
+\index{ADS1115@{ADS1115}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{ADS1115()}{ADS1115()}}
+{\footnotesize\ttfamily ADS1115\+::\+ADS1115 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address,  }\item[{\mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}}}]{mux\+Select }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classADS1115}{ADS1115}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The I2C address of the device. \\
+\hline
+{\em mux\+Select} & The analog input multiplexer configuration. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classADS1115_ae09f693590ddffdc8034f61cbc4f9257}\label{classADS1115_ae09f693590ddffdc8034f61cbc4f9257}} 
+\index{ADS1115@{ADS1115}!read@{read}}
+\index{read@{read}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int16\+\_\+t ADS1115\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{Mux}}}]{mux,  }\item[{\mbox{\hyperlink{classADS1115_aaff9aa373fd117b0190bf9a969c1f111}{Pga}}}]{pga,  }\item[{\mbox{\hyperlink{classADS1115_ac9157986faebaac8fa4f7c70907bd67c}{Mode}}}]{mode,  }\item[{\mbox{\hyperlink{classADS1115_acfbcfb6a69166b305b42c0e0b243df46}{Data\+Rate}}}]{data\+Rate }\end{DoxyParamCaption})}
+
+
+
+Read the analog value from the ADC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mux} & The analog input multiplexer configuration. \\
+\hline
+{\em pga} & The programmable gain amplifier configuration. \\
+\hline
+{\em mode} & The operation mode. \\
+\hline
+{\em data\+Rate} & The data rate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 16-\/bit signed integer representing the analog value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classADS1115_a6ed77b7cef782273f4e5728a62fc4a99}\label{classADS1115_a6ed77b7cef782273f4e5728a62fc4a99}} 
+\index{ADS1115@{ADS1115}!read0@{read0}}
+\index{read0@{read0}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{read0()}{read0()}}
+{\footnotesize\ttfamily int16\+\_\+t ADS1115\+::read0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read the analog value from AIN0 (single-\/ended, single-\/shot mode). 
+
+\begin{DoxyReturn}{Returns}
+The 16-\/bit signed integer representing the analog value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classADS1115_a8c60e8675751e6b139187ed59b6b5634}\label{classADS1115_a8c60e8675751e6b139187ed59b6b5634}} 
+\index{ADS1115@{ADS1115}!read1@{read1}}
+\index{read1@{read1}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{read1()}{read1()}}
+{\footnotesize\ttfamily int16\+\_\+t ADS1115\+::read1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read the analog value from AIN1 (single-\/ended, single-\/shot mode). 
+
+\begin{DoxyReturn}{Returns}
+The 16-\/bit signed integer representing the analog value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classADS1115_af261453380d71a4fde149ecddaf82e87}\label{classADS1115_af261453380d71a4fde149ecddaf82e87}} 
+\index{ADS1115@{ADS1115}!read2@{read2}}
+\index{read2@{read2}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{read2()}{read2()}}
+{\footnotesize\ttfamily int16\+\_\+t ADS1115\+::read2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read the analog value from AIN2 (single-\/ended, single-\/shot mode). 
+
+\begin{DoxyReturn}{Returns}
+The 16-\/bit signed integer representing the analog value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classADS1115_a0250a9698ddd349d5747ba37923d50c3}\label{classADS1115_a0250a9698ddd349d5747ba37923d50c3}} 
+\index{ADS1115@{ADS1115}!read3@{read3}}
+\index{read3@{read3}!ADS1115@{ADS1115}}
+\doxysubsubsection{\texorpdfstring{read3()}{read3()}}
+{\footnotesize\ttfamily int16\+\_\+t ADS1115\+::read3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read the analog value from AIN3 (single-\/ended, single-\/shot mode). 
+
+\begin{DoxyReturn}{Returns}
+The 16-\/bit signed integer representing the analog value. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ADS1115_8h}{ADS1115.\+h}}\item 
+\mbox{\hyperlink{ADS1115_8cpp}{ADS1115.\+cpp}}\end{DoxyCompactItemize}

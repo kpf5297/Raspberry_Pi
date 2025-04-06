@@ -1,0 +1,42 @@
+\hypertarget{Relay_8h_source}{}\doxysection{Relay.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*    }}
+\DoxyCodeLine{2 \textcolor{comment}{    Filename: Relay.h}}
+\DoxyCodeLine{3 \textcolor{comment}{}}
+\DoxyCodeLine{4 \textcolor{comment}{    Purpose: Control 8 solid state relays using a Raspberry Pi 4B}}
+\DoxyCodeLine{5 \textcolor{comment}{    }}
+\DoxyCodeLine{6 \textcolor{comment}{    Using:  Raspberry Pi 4B (3.3v)}}
+\DoxyCodeLine{7 \textcolor{comment}{            SaintSmart 8 Channel Solid State Relay Module (Active High)}}
+\DoxyCodeLine{8 \textcolor{comment}{    }}
+\DoxyCodeLine{9 \textcolor{comment}{    Author:         Kevin Fox}}
+\DoxyCodeLine{10 \textcolor{comment}{    Date Created:   24 OCT 2023}}
+\DoxyCodeLine{11 \textcolor{comment}{}}
+\DoxyCodeLine{12 \textcolor{comment}{*/}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#ifndef RELAY\_H}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define RELAY\_H}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <gpiod.h>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{classRelay}{Relay}} \{}
+\DoxyCodeLine{22     }
+\DoxyCodeLine{23 \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classWaterPump}{WaterPump}};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keyword}{private}:}
+\DoxyCodeLine{26         gpiod\_chip *chip;}
+\DoxyCodeLine{27         gpiod\_line *line;}
+\DoxyCodeLine{28         \textcolor{keywordtype}{bool} state;}
+\DoxyCodeLine{29         \textcolor{keywordtype}{int} pinNum;}
+\DoxyCodeLine{30     \textcolor{keyword}{public}:}
+\DoxyCodeLine{31         \mbox{\hyperlink{classRelay}{Relay}}(\textcolor{keywordtype}{int} pinNumber);}
+\DoxyCodeLine{32         \mbox{\hyperlink{classRelay}{\string~Relay}}();}
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} setState(\textcolor{keywordtype}{bool} state);}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} getState();}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

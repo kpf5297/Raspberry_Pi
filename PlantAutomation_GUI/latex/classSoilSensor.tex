@@ -1,0 +1,211 @@
+\hypertarget{classSoilSensor}{}\doxysection{Soil\+Sensor Class Reference}
+\label{classSoilSensor}\index{SoilSensor@{SoilSensor}}
+
+
+The \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}} class.  
+
+
+
+
+{\ttfamily \#include $<$Soil\+Sensor.\+h$>$}
+
+
+
+Collaboration diagram for Soil\+Sensor\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSoilSensor_a13d0467de5d5a6df2fc43b1d9dcf8c2e}{Soil\+Sensor}} (uint8\+\_\+t address, \mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115\+::\+Mux}} mux\+Select)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSoilSensor_a7b75df9491744583bfe968275242a74b}\label{classSoilSensor_a7b75df9491744583bfe968275242a74b}} 
+{\bfseries $\sim$\+Soil\+Sensor} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSoilSensor_abd9a3c69ac5ed0778f63e473bb160cd7}{read\+Moisture}} ()
+\begin{DoxyCompactList}\small\item\em Read the soil moisture. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSoilSensor_abf5b8e2ab380a66951c74b14c6917776}{calibrate}} ()
+\begin{DoxyCompactList}\small\item\em Calibrate the soil sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSoilSensor_a28d7d5b82e829498b808d89b011de971}{set\+Wet\+Cal\+Value}} (int16\+\_\+t wet\+Value)
+\begin{DoxyCompactList}\small\item\em Set the calibration values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSoilSensor_afa7e34401f244f2d770e86a306a08bd3}{set\+Dry\+Cal\+Value}} (int16\+\_\+t dry\+Value)
+\begin{DoxyCompactList}\small\item\em Set the calibration values. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{classSoilSensor_a3cd1e261751c947b7515f44ff8179eff}{get\+Wet\+Cal\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Get the calibration values. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{classSoilSensor_a4d8a1b93198b63cac3c2bc4820773175}{get\+Dry\+Cal\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Get the calibration values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classSoilSensor_a846a2d212e0837ada97dac931a866927}{set\+Wet\+Cal\+Value}} (int16\+\_\+t wet\+Value, \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}} $\ast$sensor)
+\begin{DoxyCompactList}\small\item\em Set the calibration values. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSoilSensor_acf1eabd0833673951c515e4bbce5e681}{set\+Dry\+Cal\+Value}} (int16\+\_\+t dry\+Value, \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}} $\ast$sensor)
+\begin{DoxyCompactList}\small\item\em Set the calibration values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classADS1115}{ADS1115}} \mbox{\hyperlink{classSoilSensor_add7a21ddb16fa7a44fe9c86917d1a4c8}{ads1115}}
+\begin{DoxyCompactList}\small\item\em Create the analog to digital object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSoilSensor_a13d0467de5d5a6df2fc43b1d9dcf8c2e}\label{classSoilSensor_a13d0467de5d5a6df2fc43b1d9dcf8c2e}} 
+\index{SoilSensor@{SoilSensor}!SoilSensor@{SoilSensor}}
+\index{SoilSensor@{SoilSensor}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{SoilSensor()}{SoilSensor()}}
+{\footnotesize\ttfamily Soil\+Sensor\+::\+Soil\+Sensor (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address,  }\item[{\mbox{\hyperlink{classADS1115_a171c82ff519a2a97702b4d3506aaf47b}{ADS1115\+::\+Mux}}}]{mux\+Select }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Address of the soil sensor. \\
+\hline
+{\em mux\+Select} & Mux configuration for the soil sensor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSoilSensor_abf5b8e2ab380a66951c74b14c6917776}\label{classSoilSensor_abf5b8e2ab380a66951c74b14c6917776}} 
+\index{SoilSensor@{SoilSensor}!calibrate@{calibrate}}
+\index{calibrate@{calibrate}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{calibrate()}{calibrate()}}
+{\footnotesize\ttfamily bool Soil\+Sensor\+::calibrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calibrate the soil sensor. 
+
+\begin{DoxyReturn}{Returns}
+True if calibration was successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSoilSensor_a4d8a1b93198b63cac3c2bc4820773175}\label{classSoilSensor_a4d8a1b93198b63cac3c2bc4820773175}} 
+\index{SoilSensor@{SoilSensor}!getDryCalValue@{getDryCalValue}}
+\index{getDryCalValue@{getDryCalValue}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{getDryCalValue()}{getDryCalValue()}}
+{\footnotesize\ttfamily int16\+\_\+t Soil\+Sensor\+::get\+Dry\+Cal\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the calibration values. 
+
+\begin{DoxyReturn}{Returns}
+Calibration value for dry soil. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSoilSensor_a3cd1e261751c947b7515f44ff8179eff}\label{classSoilSensor_a3cd1e261751c947b7515f44ff8179eff}} 
+\index{SoilSensor@{SoilSensor}!getWetCalValue@{getWetCalValue}}
+\index{getWetCalValue@{getWetCalValue}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{getWetCalValue()}{getWetCalValue()}}
+{\footnotesize\ttfamily int16\+\_\+t Soil\+Sensor\+::get\+Wet\+Cal\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the calibration values. 
+
+\begin{DoxyReturn}{Returns}
+Calibration value for wet soil. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSoilSensor_abd9a3c69ac5ed0778f63e473bb160cd7}\label{classSoilSensor_abd9a3c69ac5ed0778f63e473bb160cd7}} 
+\index{SoilSensor@{SoilSensor}!readMoisture@{readMoisture}}
+\index{readMoisture@{readMoisture}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{readMoisture()}{readMoisture()}}
+{\footnotesize\ttfamily double Soil\+Sensor\+::read\+Moisture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read the soil moisture. 
+
+\begin{DoxyReturn}{Returns}
+Soil moisture level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSoilSensor_afa7e34401f244f2d770e86a306a08bd3}\label{classSoilSensor_afa7e34401f244f2d770e86a306a08bd3}} 
+\index{SoilSensor@{SoilSensor}!setDryCalValue@{setDryCalValue}}
+\index{setDryCalValue@{setDryCalValue}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{setDryCalValue()}{setDryCalValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Soil\+Sensor\+::set\+Dry\+Cal\+Value (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{dry\+Value }\end{DoxyParamCaption})}
+
+
+
+Set the calibration values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dry\+Value} & Calibration value for dry soil. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSoilSensor_acf1eabd0833673951c515e4bbce5e681}\label{classSoilSensor_acf1eabd0833673951c515e4bbce5e681}} 
+\index{SoilSensor@{SoilSensor}!setDryCalValue@{setDryCalValue}}
+\index{setDryCalValue@{setDryCalValue}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{setDryCalValue()}{setDryCalValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Soil\+Sensor\+::set\+Dry\+Cal\+Value (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{dry\+Value,  }\item[{\mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the calibration values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dry\+Value} & Calibration value for dry soil. \\
+\hline
+{\em sensor} & \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSoilSensor_a28d7d5b82e829498b808d89b011de971}\label{classSoilSensor_a28d7d5b82e829498b808d89b011de971}} 
+\index{SoilSensor@{SoilSensor}!setWetCalValue@{setWetCalValue}}
+\index{setWetCalValue@{setWetCalValue}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{setWetCalValue()}{setWetCalValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Soil\+Sensor\+::set\+Wet\+Cal\+Value (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{wet\+Value }\end{DoxyParamCaption})}
+
+
+
+Set the calibration values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wet\+Value} & Calibration value for wet soil. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSoilSensor_a846a2d212e0837ada97dac931a866927}\label{classSoilSensor_a846a2d212e0837ada97dac931a866927}} 
+\index{SoilSensor@{SoilSensor}!setWetCalValue@{setWetCalValue}}
+\index{setWetCalValue@{setWetCalValue}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{setWetCalValue()}{setWetCalValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Soil\+Sensor\+::set\+Wet\+Cal\+Value (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{wet\+Value,  }\item[{\mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the calibration values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wet\+Value} & Calibration value for wet soil. \\
+\hline
+{\em sensor} & \mbox{\hyperlink{classSoilSensor}{Soil\+Sensor}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSoilSensor_add7a21ddb16fa7a44fe9c86917d1a4c8}\label{classSoilSensor_add7a21ddb16fa7a44fe9c86917d1a4c8}} 
+\index{SoilSensor@{SoilSensor}!ads1115@{ads1115}}
+\index{ads1115@{ads1115}!SoilSensor@{SoilSensor}}
+\doxysubsubsection{\texorpdfstring{ads1115}{ads1115}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classADS1115}{ADS1115}} Soil\+Sensor\+::ads1115}
+
+
+
+Create the analog to digital object. 
+
+\begin{DoxyReturn}{Returns}
+Analog to digital object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Soil\+Sensor.\+h\item 
+Soil\+Sensor.\+cpp\end{DoxyCompactItemize}

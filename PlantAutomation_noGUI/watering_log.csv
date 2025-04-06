@@ -1,0 +1,360 @@
+2023-11-25 14:39:00,Watering Program,Starting
+2023-11-25 14:39:00,Pump On Time from struct,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:00,Current Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:00,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:00,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:00,Wait Time Passed,0
+2023-11-25 14:39:01,Current Time,Sat Nov 25 14:39:01 2023
+2023-11-25 14:39:01,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:01,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:01,Wait Time Passed,0
+2023-11-25 14:39:02,Current Time,Sat Nov 25 14:39:02 2023
+2023-11-25 14:39:02,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:02,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:02,Wait Time Passed,0
+2023-11-25 14:39:03,Current Time,Sat Nov 25 14:39:03 2023
+2023-11-25 14:39:03,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:03,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:03,Wait Time Passed,0
+2023-11-25 14:39:04,Current Time,Sat Nov 25 14:39:04 2023
+2023-11-25 14:39:04,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:04,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:04,Wait Time Passed,0
+2023-11-25 14:39:05,Current Time,Sat Nov 25 14:39:05 2023
+2023-11-25 14:39:05,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:05,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:05,Wait Time Passed,0
+2023-11-25 14:39:06,Current Time,Sat Nov 25 14:39:06 2023
+2023-11-25 14:39:06,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:06,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:06,Wait Time Passed,0
+2023-11-25 14:39:07,Current Time,Sat Nov 25 14:39:07 2023
+2023-11-25 14:39:07,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:07,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:07,Wait Time Passed,0
+2023-11-25 14:39:08,Current Time,Sat Nov 25 14:39:08 2023
+2023-11-25 14:39:08,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:08,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:08,Wait Time Passed,0
+2023-11-25 14:39:09,Current Time,Sat Nov 25 14:39:09 2023
+2023-11-25 14:39:09,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:09,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 1
+2023-11-25 14:39:09,Wait Time Passed,0
+2023-11-25 14:39:10,Current Time,Sat Nov 25 14:39:10 2023
+2023-11-25 14:39:10,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:10,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:11,Current Time,Sat Nov 25 14:39:11 2023
+2023-11-25 14:39:11,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:11,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:12,Current Time,Sat Nov 25 14:39:12 2023
+2023-11-25 14:39:12,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:12,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:13,Current Time,Sat Nov 25 14:39:13 2023
+2023-11-25 14:39:13,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:13,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:14,Current Time,Sat Nov 25 14:39:14 2023
+2023-11-25 14:39:14,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:14,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:15,Current Time,Sat Nov 25 14:39:15 2023
+2023-11-25 14:39:15,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:15,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:16,Current Time,Sat Nov 25 14:39:16 2023
+2023-11-25 14:39:16,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:16,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:17,Current Time,Sat Nov 25 14:39:17 2023
+2023-11-25 14:39:17,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:17,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:18,Current Time,Sat Nov 25 14:39:18 2023
+2023-11-25 14:39:18,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:18,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:19,Current Time,Sat Nov 25 14:39:19 2023
+2023-11-25 14:39:19,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:19,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:20,Current Time,Sat Nov 25 14:39:20 2023
+2023-11-25 14:39:20,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:20,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:21,Current Time,Sat Nov 25 14:39:21 2023
+2023-11-25 14:39:21,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:21,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:22,Current Time,Sat Nov 25 14:39:22 2023
+2023-11-25 14:39:22,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:22,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:23,Current Time,Sat Nov 25 14:39:23 2023
+2023-11-25 14:39:23,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:23,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:24,Current Time,Sat Nov 25 14:39:24 2023
+2023-11-25 14:39:24,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:24,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:25,Current Time,Sat Nov 25 14:39:25 2023
+2023-11-25 14:39:25,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:25,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:26,Current Time,Sat Nov 25 14:39:26 2023
+2023-11-25 14:39:26,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:26,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:27,Current Time,Sat Nov 25 14:39:27 2023
+2023-11-25 14:39:27,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:27,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:28,Current Time,Sat Nov 25 14:39:28 2023
+2023-11-25 14:39:28,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:28,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:29,Current Time,Sat Nov 25 14:39:29 2023
+2023-11-25 14:39:29,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:29,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:30,Current Time,Sat Nov 25 14:39:30 2023
+2023-11-25 14:39:30,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:30,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:31,Current Time,Sat Nov 25 14:39:31 2023
+2023-11-25 14:39:31,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:31,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:32,Current Time,Sat Nov 25 14:39:32 2023
+2023-11-25 14:39:32,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:32,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:33,Current Time,Sat Nov 25 14:39:33 2023
+2023-11-25 14:39:33,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:33,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:34,Current Time,Sat Nov 25 14:39:34 2023
+2023-11-25 14:39:34,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:34,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:35,Current Time,Sat Nov 25 14:39:35 2023
+2023-11-25 14:39:35,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:35,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:36,Current Time,Sat Nov 25 14:39:36 2023
+2023-11-25 14:39:36,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:36,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:37,Current Time,Sat Nov 25 14:39:37 2023
+2023-11-25 14:39:37,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:37,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:38,Current Time,Sat Nov 25 14:39:38 2023
+2023-11-25 14:39:38,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:38,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:39,Current Time,Sat Nov 25 14:39:39 2023
+2023-11-25 14:39:39,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:39,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:40,Current Time,Sat Nov 25 14:39:40 2023
+2023-11-25 14:39:40,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:40,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:41,Current Time,Sat Nov 25 14:39:41 2023
+2023-11-25 14:39:41,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:41,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:42,Current Time,Sat Nov 25 14:39:42 2023
+2023-11-25 14:39:42,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:42,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:43,Current Time,Sat Nov 25 14:39:43 2023
+2023-11-25 14:39:43,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:43,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:44,Current Time,Sat Nov 25 14:39:44 2023
+2023-11-25 14:39:44,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:44,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:45,Current Time,Sat Nov 25 14:39:45 2023
+2023-11-25 14:39:45,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:45,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:46,Current Time,Sat Nov 25 14:39:46 2023
+2023-11-25 14:39:46,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:46,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:47,Current Time,Sat Nov 25 14:39:47 2023
+2023-11-25 14:39:47,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:47,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:48,Current Time,Sat Nov 25 14:39:48 2023
+2023-11-25 14:39:48,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:48,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:49,Current Time,Sat Nov 25 14:39:49 2023
+2023-11-25 14:39:49,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:49,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:50,Current Time,Sat Nov 25 14:39:50 2023
+2023-11-25 14:39:50,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:50,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:51,Current Time,Sat Nov 25 14:39:51 2023
+2023-11-25 14:39:51,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:51,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:52,Current Time,Sat Nov 25 14:39:52 2023
+2023-11-25 14:39:52,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:52,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:53,Current Time,Sat Nov 25 14:39:53 2023
+2023-11-25 14:39:53,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:53,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:54,Current Time,Sat Nov 25 14:39:54 2023
+2023-11-25 14:39:54,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:54,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:55,Current Time,Sat Nov 25 14:39:55 2023
+2023-11-25 14:39:55,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:55,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:56,Current Time,Sat Nov 25 14:39:56 2023
+2023-11-25 14:39:56,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:56,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:57,Current Time,Sat Nov 25 14:39:57 2023
+2023-11-25 14:39:57,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:57,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:58,Current Time,Sat Nov 25 14:39:58 2023
+2023-11-25 14:39:58,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:58,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:39:59,Current Time,Sat Nov 25 14:39:59 2023
+2023-11-25 14:39:59,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:39:59,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:00,Current Time,Sat Nov 25 14:40:00 2023
+2023-11-25 14:40:00,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:00,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:01,Current Time,Sat Nov 25 14:40:01 2023
+2023-11-25 14:40:01,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:01,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:02,Current Time,Sat Nov 25 14:40:02 2023
+2023-11-25 14:40:02,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:02,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:03,Current Time,Sat Nov 25 14:40:03 2023
+2023-11-25 14:40:03,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:03,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:04,Current Time,Sat Nov 25 14:40:04 2023
+2023-11-25 14:40:04,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:04,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:05,Current Time,Sat Nov 25 14:40:05 2023
+2023-11-25 14:40:05,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:05,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:06,Current Time,Sat Nov 25 14:40:06 2023
+2023-11-25 14:40:06,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:06,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:07,Current Time,Sat Nov 25 14:40:07 2023
+2023-11-25 14:40:07,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:07,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:08,Current Time,Sat Nov 25 14:40:08 2023
+2023-11-25 14:40:08,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:08,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:09,Current Time,Sat Nov 25 14:40:09 2023
+2023-11-25 14:40:09,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:09,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:10,Current Time,Sat Nov 25 14:40:10 2023
+2023-11-25 14:40:10,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:10,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:11,Current Time,Sat Nov 25 14:40:11 2023
+2023-11-25 14:40:11,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:11,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:12,Current Time,Sat Nov 25 14:40:12 2023
+2023-11-25 14:40:12,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:12,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:13,Current Time,Sat Nov 25 14:40:13 2023
+2023-11-25 14:40:13,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:13,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:14,Current Time,Sat Nov 25 14:40:14 2023
+2023-11-25 14:40:14,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:14,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:15,Current Time,Sat Nov 25 14:40:15 2023
+2023-11-25 14:40:15,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:15,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:16,Current Time,Sat Nov 25 14:40:16 2023
+2023-11-25 14:40:16,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:16,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:17,Current Time,Sat Nov 25 14:40:17 2023
+2023-11-25 14:40:17,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:17,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:18,Current Time,Sat Nov 25 14:40:18 2023
+2023-11-25 14:40:18,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:18,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:19,Current Time,Sat Nov 25 14:40:19 2023
+2023-11-25 14:40:19,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:19,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:20,Current Time,Sat Nov 25 14:40:20 2023
+2023-11-25 14:40:20,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:20,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:21,Current Time,Sat Nov 25 14:40:21 2023
+2023-11-25 14:40:21,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:21,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:22,Current Time,Sat Nov 25 14:40:22 2023
+2023-11-25 14:40:22,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:22,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:23,Current Time,Sat Nov 25 14:40:23 2023
+2023-11-25 14:40:23,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:23,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:24,Current Time,Sat Nov 25 14:40:24 2023
+2023-11-25 14:40:24,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:24,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:25,Current Time,Sat Nov 25 14:40:25 2023
+2023-11-25 14:40:25,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:25,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:26,Current Time,Sat Nov 25 14:40:26 2023
+2023-11-25 14:40:26,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:26,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:27,Current Time,Sat Nov 25 14:40:27 2023
+2023-11-25 14:40:27,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:27,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:28,Current Time,Sat Nov 25 14:40:28 2023
+2023-11-25 14:40:28,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:28,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:29,Current Time,Sat Nov 25 14:40:29 2023
+2023-11-25 14:40:29,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:29,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:30,Current Time,Sat Nov 25 14:40:30 2023
+2023-11-25 14:40:30,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:30,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:31,Current Time,Sat Nov 25 14:40:31 2023
+2023-11-25 14:40:31,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:31,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:32,Current Time,Sat Nov 25 14:40:32 2023
+2023-11-25 14:40:32,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:32,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:33,Current Time,Sat Nov 25 14:40:33 2023
+2023-11-25 14:40:33,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:33,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:34,Current Time,Sat Nov 25 14:40:34 2023
+2023-11-25 14:40:34,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:34,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:35,Current Time,Sat Nov 25 14:40:35 2023
+2023-11-25 14:40:35,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:35,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:36,Current Time,Sat Nov 25 14:40:36 2023
+2023-11-25 14:40:36,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:36,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:37,Current Time,Sat Nov 25 14:40:37 2023
+2023-11-25 14:40:37,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:37,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:38,Current Time,Sat Nov 25 14:40:38 2023
+2023-11-25 14:40:38,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:38,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:39,Current Time,Sat Nov 25 14:40:39 2023
+2023-11-25 14:40:39,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:39,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:40,Current Time,Sat Nov 25 14:40:40 2023
+2023-11-25 14:40:40,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:40,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:41,Current Time,Sat Nov 25 14:40:41 2023
+2023-11-25 14:40:41,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:41,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:42,Current Time,Sat Nov 25 14:40:42 2023
+2023-11-25 14:40:42,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:42,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:43,Current Time,Sat Nov 25 14:40:43 2023
+2023-11-25 14:40:43,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:43,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:44,Current Time,Sat Nov 25 14:40:44 2023
+2023-11-25 14:40:44,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:44,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:45,Current Time,Sat Nov 25 14:40:45 2023
+2023-11-25 14:40:45,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:45,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:46,Current Time,Sat Nov 25 14:40:46 2023
+2023-11-25 14:40:46,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:46,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:47,Current Time,Sat Nov 25 14:40:47 2023
+2023-11-25 14:40:47,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:47,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:48,Current Time,Sat Nov 25 14:40:48 2023
+2023-11-25 14:40:48,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:48,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:49,Current Time,Sat Nov 25 14:40:49 2023
+2023-11-25 14:40:49,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:49,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:50,Current Time,Sat Nov 25 14:40:50 2023
+2023-11-25 14:40:50,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:50,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:51,Current Time,Sat Nov 25 14:40:51 2023
+2023-11-25 14:40:51,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:51,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:52,Current Time,Sat Nov 25 14:40:52 2023
+2023-11-25 14:40:52,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:52,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:53,Current Time,Sat Nov 25 14:40:53 2023
+2023-11-25 14:40:53,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:53,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:54,Current Time,Sat Nov 25 14:40:54 2023
+2023-11-25 14:40:54,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:54,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
+2023-11-25 14:40:55,Current Time,Sat Nov 25 14:40:55 2023
+2023-11-25 14:40:55,Next Activation Time,Sat Nov 25 14:39:00 2023
+2023-11-25 14:40:55,Pump Logic,Current Time >= On Time: 1, Current Time < On Time + Duration: 0
